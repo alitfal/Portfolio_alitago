@@ -1,5 +1,5 @@
 {
-  "name": "@fjrodafo/portfolio",
+  "name": "@alitfal/portfolio",
   "version": "1.0.0",
   "description": "My professional minimalist portfolio!",
   "private": true,
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FJrodafo/Portfolio.git"
+    "url": "git+https://github.com/alitfal/Portfolio_alitago.git"
   },
   "keywords": [
-    "fjrodafo",
+    "alitago",
     "website",
     "portfolio",
     "cv",
@@ -55,12 +55,12 @@
     "dark",
     "mode"
   ],
-  "author": "FJrodafo - Francisco José Rodríguez Afonso",
+  "author": "alitfal - Angel Luis Litago Falces",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FJrodafo/Portfolio/issues"
+    "url": "https://github.com/alitfal/Portfolio_alitago/issues"
   },
-  "homepage": "https://github.com/FJrodafo/Portfolio#readme",
+  "homepage": "https://github.com/alitfal/Portfolio_alitago#readme",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "react": "^19.0.0",
