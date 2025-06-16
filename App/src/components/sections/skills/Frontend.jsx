@@ -35,8 +35,8 @@ const Frontend = () => {
           <div className='skills__data'>
             <i className='bx bx-badge-check' />
             <div>
-              <h3 className='skills__name'>EWW</h3>
-              <span className='skills__level'>{t('skills.intermediate')}</span>
+              <h3 className='skills__name'>Vue</h3>
+              <span className='skills__level'>{t('skills.basic')}</span>
             </div>
           </div>
           <div className='skills__data'>
