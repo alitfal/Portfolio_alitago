@@ -108,16 +108,16 @@
     "education": {
       "header": "Estudios",
       "title": {
-        "iespc": "Ciclo Formativo de Grado Superior, Desarrollo de aplicaciones web",
-        "csmc": "Interpretación musical, Trompeta",
-        "cpmt": "Interpretación musical, Trompeta"
+        "title_1": "Ciclo Formativo de Grado Superior, Desarrollo de aplicaciones web",
+        "title_2": "Ciclo Formativo de Grado Superior, Administración de sistemas informáticos",
+        "title_3": "Ciclo Formativo de Grado Superior, Desarrollo de aplicaciones informáticas"
       }
     },
     "experience": {
       "header": "Experiencia",
       "title": {
-        "oft": "Trompetista",
-        "ofjtmj": "Trompetista"
+        "job_1": "Desarrollador Automono",
+        "job_2": "Titulo de trabajo 2"
       }
     },
     "present": "Presente"

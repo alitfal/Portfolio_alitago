@@ -108,16 +108,16 @@
     "education": {
       "header": "Education",
       "title": {
-        "iespc": "Higher Degree Training Cycle, Web Application Development",
-        "csmc": "Musical performance, Trumpet",
-        "cpmt": "Musical performance, Trumpet"
+        "title_1": "Higher Degree Training Cycle, Web Application Development",
+        "title_2": "Higher Degree Training Cycle, System Administration",
+        "title_3": "Higher Degree Training Cycle, Informatic Application Development"
       }
     },
     "experience": {
       "header": "Experience",
       "title": {
-        "oft": "Trumpeter",
-        "ofjtmj": "Trumpeter"
+        "job_1": "Frelance Developer",
+        "job_2": "Job Title 2"
       }
     },
     "present": "Present"

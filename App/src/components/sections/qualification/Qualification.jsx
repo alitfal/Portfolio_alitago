@@ -25,9 +25,12 @@ const Qualification = () => {
           <div className={toggleState === 1 ? 'qualification__content qualification__content-active' : 'qualification__content'}>
             <div className='qualification__data'>
               <div>
-                <h3 className='qualification__title'>{t('qualification.education.title.iespc')}</h3>
+                <h3 className='qualification__title'>{t('qualification.education.title.title_1')}</h3>
                 <a href='https://www3.gobiernodecanarias.org/medusa/edublog/iespuertodelacruztelesforobravo/' className='qualification__link' target='_blank' rel='noreferrer'>
-                  <span className='qualification__subtitle'>IES Puerto de la Cruz - Telesforo Bravo</span>
+                  <span className='qualification__subtitle'>IES Puerto de la Cruz</span>
+                </a>
+                <a href='https://www3.gobiernodecanarias.org/medusa/edublog/cifpcesarmanrique/' className='qualification__link' target='_blank' rel='noreferrer'>
+                  <span className='qualification__subtitle'>CIFP César Manrique</span>
                 </a>
                 <div className='qualification__calender'><i className='uil uil-calendar-alt' /> Oct 2022 - Jun 2026</div>
               </div>
@@ -43,20 +46,20 @@ const Qualification = () => {
                 <span className='qualification__line'></span>
               </div>
               <div>
-                <h3 className='qualification__title'>{t('qualification.education.title.csmc')}</h3>
-                <a href='https://www3.gobiernodecanarias.org/medusa/edublog/csmcanarias/' className='qualification__link' target='_blank' rel='noreferrer'>
-                  <span className='qualification__subtitle'>CSMC - Conservatorio Superior de Música de Canarias (Sede Tenerife)</span>
+                <h3 className='qualification__title'>{t('qualification.education.title.title_2')}</h3>
+                <a href='https://www3.gobiernodecanarias.org/medusa/edublog/iespuertodelacruztelesforobravo/' className='qualification__link' target='_blank' rel='noreferrer'>
+                  <span className='qualification__subtitle'>IES Puerto de la Cruz</span>
                 </a>
-                <div className='qualification__calender'><i className='uil uil-calendar-alt' /> Sep 2020 - Sep 2025</div>
+                <div className='qualification__calender'><i className='uil uil-calendar-alt' /> Oct 2006 - Jun 2007</div>
               </div>
             </div>
             <div className='qualification__data'>
               <div>
-                <h3 className='qualification__title'>{t('qualification.education.title.cpmt')}</h3>
-                <a href='https://www3.gobiernodecanarias.org/medusa/edublog/cpmsantacruzdetenerife/' className='qualification__link' target='_blank' rel='noreferrer'>
-                  <span className='qualification__subtitle'>CPMT - Conservatorio Profesional de Música de Santa Cruz de Tenerife</span>
+                <h3 className='qualification__title'>{t('qualification.education.title.title_3')}</h3>
+                <a href='https://www3.gobiernodecanarias.org/medusa/edublog/iespuertodelacruztelesforobravo/' className='qualification__link' target='_blank' rel='noreferrer'>
+                  <span className='qualification__subtitle'>IES Puerto de la Cruz</span>
                 </a>
-                <div className='qualification__calender'><i className='uil uil-calendar-alt' /> Sep 2018 - Jun 2021</div>
+                <div className='qualification__calender'><i className='uil uil-calendar-alt' /> Oct 2004 - Jun 2006</div>
               </div>
               <div>
                 <span className='qualification__rounder'></span>
@@ -71,23 +74,23 @@ const Qualification = () => {
                 <span className='qualification__line'></span>
               </div>
               <div>
-                <h3 className='qualification__title'>{t('qualification.experience.title.oft')}</h3>
-                <a href='https://www.facebook.com/orquestafilarmonicadetenerife/' className='qualification__link' target='_blank' rel='noreferrer'>
-                  <span className='qualification__subtitle'>OFT - Orquesta Filarmónica de Tenerife</span>
+                <h3 className='qualification__title'>{t('qualification.experience.title.job_1')}</h3>
+                <a href='https://www.inytel.com' className='qualification__link' target='_blank' rel='noreferrer'>
+                  <span className='qualification__subtitle'>Inytel - Informática y Telefonía</span>
                 </a>
                 <div className='qualification__calender'><i className='uil uil-calendar-alt' /> May 2018 - {t('qualification.present')}</div>
               </div>
             </div>
             <div className='qualification__data'>
-              <div>
-                <h3 className='qualification__title'>{t('qualification.experience.title.ofjtmj')}</h3>
+              {/* <div>
+                <h3 className='qualification__title'>{t('qualification.experience.title.job_2')}</h3>
                 <a href='https://www.facebook.com/OrquestaFilarmonicaJuvenildeTenerifeMiguelJaubert/' className='qualification__link' target='_blank' rel='noreferrer'>
                   <span className='qualification__subtitle'>OFJT-MJ - Orquesta Filarmónica Juvenil de Tenerife "Miguel Jaubert"</span>
                 </a>
                 <div className='qualification__calender'><i className='uil uil-calendar-alt' /> Nov 2017 - Feb 2019</div>
-              </div>
+              </div> */}
               <div>
-                <span className='qualification__rounder'></span>
+                {/* <span className='qualification__rounder'></span> */}
                 {/*<span className='qualification__line'></span>*/}
               </div>
             </div>
