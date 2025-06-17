@@ -78,7 +78,7 @@ const Qualification = () => {
                 <a href='https://www.inytel.com' className='qualification__link' target='_blank' rel='noreferrer'>
                   <span className='qualification__subtitle'>Inytel - Informática y Telefonía</span>
                 </a>
-                <div className='qualification__calender'><i className='uil uil-calendar-alt' /> May 2018 - {t('qualification.present')}</div>
+                <div className='qualification__calender'><i className='uil uil-calendar-alt' /> May 2003 - {t('qualification.present')}</div>
               </div>
             </div>
             <div className='qualification__data'>
