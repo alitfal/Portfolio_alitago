@@ -141,20 +141,20 @@
       "subtitle": "Mis clientes dicen"
     },
     "1": {
-      "name": "Cliente 1",
-      "quote": "\"Un trabajo realmente bueno, se siguieron todos los aspectos del proyecto paso a paso y con buenos resultados.\""
+      "name": "Laura Martínez",
+      "quote": "\"Trabajar con este desarrollador ha sido un acierto total. Captó nuestras necesidades rápidamente y entregó un proyecto funcional y atractivo.\""
     },
     "2": {
-      "name": "Cliente 2",
-      "quote": "\"Un trabajo realmente bueno, se siguieron todos los aspectos del proyecto paso a paso y con buenos resultados.\""
+      "name": "David Gómez",
+      "quote": "\"El proyecto se completó en plazo y con una calidad excelente. La comunicación fue fluida y profesional en todo momento. ¡Recomendado al 100%!\""
     },
     "3": {
-      "name": "Cliente 3",
-      "quote": "\"Un trabajo realmente bueno, se siguieron todos los aspectos del proyecto paso a paso y con buenos resultados.\""
+      "name": "Ana Torres",
+      "quote": "\"Supieron transformar nuestras ideas en una herramienta útil y sencilla. Muy satisfechos con el resultado y el soporte recibido tras la entrega.\""
     },
     "4": {
-      "name": "Cliente 4",
-      "quote": "\"Un trabajo realmente bueno, se siguieron todos los aspectos del proyecto paso a paso y con buenos resultados.\""
+      "name": "Jorge Ramírez",
+      "quote": "\"Gran profesional. El trabajo superó nuestras expectativas y nos ayudó a optimizar procesos internos. Trabajaremos en futuros desarrollos.\""
     }
   },
   "contact": {
