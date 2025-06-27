@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:image" content="https://avatars.githubusercontent.com/u/126250262?v=4" />
-        <meta property="og:url" content="https://fjrodafo.vercel.app/" />
+        <meta property="og:url" content="https://portfolio-alitago.vercel.app/" />
         <title>{metadata.title}</title>
         <link rel='icon' href='/favicon.ico' />
         <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' />
