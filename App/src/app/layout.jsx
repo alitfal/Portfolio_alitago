@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <meta name='keywords' content={metadata.keywords} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content="https://avatars.githubusercontent.com/u/126250262?v=4" />
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/17743628?s=400&u=e64e7cc9111abc5e2cc6e9c6e9ace7afe1ca92c6&v=4" />
         <meta property="og:url" content="https://portfolio-alitago.vercel.app/" />
         <title>{metadata.title}</title>
         <link rel='icon' href='/favicon.ico' />
