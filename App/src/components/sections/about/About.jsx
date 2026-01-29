@@ -21,7 +21,7 @@ const About = () => {
           // target="_blank"
           // rel="noreferrer"
           >
-            {/* {t("about.button")} */}
+            {t("about.button")}
             <svg
               className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
