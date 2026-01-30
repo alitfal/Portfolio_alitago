@@ -4,6 +4,7 @@ import { useTranslation } from "@/components/context/translation/Translation.jsx
 
 const Footer = () => {
   const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="footer">
@@ -54,7 +55,7 @@ const Footer = () => {
           </a>
         </div>
         <span className="footer__copy">
-          Copyright &#169; 2025 Angel Luis
+          Copyright &#169; {currentYear} Angel Luis
           <br />
           Litago Falces - MIT License.
           <br />
