@@ -11,17 +11,18 @@ const About = () => {
       <h2 className="section__title">{t("about.section.title")}</h2>
       <span className="section__subtitle">{t("about.section.subtitle")}</span>
       <div className="about__container container grid">
-        <img src="/images/about.png" alt="" className="about__img" />
+        <img src="/images/about.png" alt="About me" className="about__img" />
         <div className="about__data">
           <Info />
           <p className="about__description">{t("about.description")}</p>
+          {/*
           <a
-          // href="https://portfolio-alitago.vercel.app/"
-          // className="button button--flex"
-          // target="_blank"
-          // rel="noreferrer"
+            href="https://portfolio-alitago.vercel.app/"
+            className="button button--flex"
+            target="_blank"
+            rel="noreferrer"
           >
-            {/* {t("about.button")} */}
+            <span>{t("about.button")}</span>
             <svg
               className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +49,7 @@ const About = () => {
               />
             </svg>
           </a>
+          */}
         </div>
       </div>
     </section>

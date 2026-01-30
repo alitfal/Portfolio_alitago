@@ -2,6 +2,7 @@
   "header": {
     "home": "Inicio",
     "about": "Sobre mi",
+    "qualification": "Formación",
     "skills": "Habilidades",
     "services": "Servicios",
     "projects": "Proyectos",
@@ -41,10 +42,11 @@
   "skills": {
     "section": {
       "title": "Habilidades",
-      "subtitle": "Nivel técnico"
+      "subtitle": "Desarrollo y Soporte IT"
     },
     "frontend": "Desarrollo Front-End",
     "backend": "Desarrollo Back-End",
+    "it": "Soporte IT",
     "basic": "Básico",
     "intermediate": "Intermedio",
     "advanced": "Avanzado"
@@ -102,7 +104,7 @@
   },
   "qualification": {
     "section": {
-      "title": "Calificación",
+      "title": "Formación",
       "subtitle": "Mi viaje personal"
     },
     "education": {
@@ -116,7 +118,7 @@
     "experience": {
       "header": "Experiencia",
       "title": {
-        "job_1": "Desarrollador Automono",
+        "job_1": "Desarrollador Automono e IT Especialista",
         "job_2": "Titulo de trabajo 2"
       }
     },

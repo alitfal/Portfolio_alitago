@@ -2,6 +2,7 @@
   "header": {
     "home": "Home",
     "about": "About",
+    "qualification": "Qualification",
     "skills": "Skills",
     "services": "Services",
     "projects": "Projects",
@@ -41,10 +42,11 @@
   "skills": {
     "section": {
       "title": "Skills",
-      "subtitle": "My technical level"
+      "subtitle": "Developer and IT Support"
     },
     "frontend": "Front-End Development",
     "backend": "Back-End Development",
+    "it": "IT Support",
     "basic": "Basic",
     "intermediate": "Intermediate",
     "advanced": "Advanced"
@@ -116,7 +118,7 @@
     "experience": {
       "header": "Experience",
       "title": {
-        "job_1": "Freelance Developer",
+        "job_1": "Freelance Developer and IT Specialist",
         "job_2": "Job Title 2"
       }
     },
