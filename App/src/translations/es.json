@@ -1,8 +1,8 @@
 {
   "header": {
     "home": "Inicio",
-    "about": "Sobre mi",
-    "qualification": "Formación",
+    "about": "Sobre mí",
+    "qualification": "Trayectoria",
     "skills": "Habilidades",
     "services": "Servicios",
     "projects": "Proyectos",
@@ -12,30 +12,30 @@
     "dark": "Modo Oscuro",
     "light": "Tema Claro",
     "translate": "Traducir",
-    "subtitle": "Desarrollador FileMaker & Web",
-    "description": "Desarrollador certificado Claris Filemaker además de aplicaciones web de las Islas Canarias.",
-    "button": "Di Hola",
-    "scroll": "Continuar"
+    "subtitle": "Desarrollador FileMaker y Web",
+    "description": "Desarrollador de Claris FileMaker y aplicaciones web Full-Stack de las Islas Canarias.",
+    "button": "Saludar",
+    "scroll": "Bajar"
   },
   "about": {
     "section": {
-      "title": "Sobre mi",
-      "subtitle": "Introducción"
+      "title": "Sobre mí",
+      "subtitle": "Mi introducción"
     },
-    "description": "Como desarrollador de aplicaciones web Full-Stack y certificado en Claris FileMaker, diseño y desarrollo tanto el frontend como el backend, brindando soluciones integrales, personalizadas y eficaces para mis clientes. Combinando tecnologías web modernas con el poder de FileMaker, creo aplicaciones potentes, conectadas y orientadas a la productividad.",
-    "button": "Curriculum Vitae",
+    "description": "Como desarrollador Full-Stack de aplicaciones web, diseño y desarrollo tanto el frontend como el backend, ofreciendo soluciones completas y satisfactorias para mis clientes.",
+    "button": "Currículum Vitae",
     "info": {
       "experience": {
         "title": "Experiencia",
         "subtitle": "+12 Años"
       },
       "completed": {
-        "title": "Completado",
+        "title": "Completados",
         "subtitle": "+15 Proyectos"
       },
       "support": {
-        "title": "Apoyo",
-        "subtitle": "En línea 24/7"
+        "title": "Soporte",
+        "subtitle": "Online 24/7"
       }
     }
   },
@@ -44,12 +44,30 @@
       "title": "Habilidades",
       "subtitle": "Desarrollo y Soporte IT"
     },
+    "category": {
+      "programming": "Programación",
+      "it": "IT & Herramientas"
+    },
     "frontend": "Desarrollo Front-End",
     "backend": "Desarrollo Back-End",
-    "it": "Soporte IT",
+    "it_title": "Soporte IT",
     "basic": "Básico",
     "intermediate": "Intermedio",
-    "advanced": "Avanzado"
+    "advanced": "Avanzado",
+    "it": {
+      "sections": {
+        "systems": "Sistemas y DevOps",
+        "tools": "Herramientas y Plataformas"
+      },
+      "details": {
+        "linux": "Administración básica de sistemas Linux y entorno de desarrollo",
+        "networking": "Conceptos de redes, configuración y resolución de problemas",
+        "docker": "Contenerización de aplicaciones y entornos de desarrollo",
+        "git": "Control de versiones y trabajo colaborativo con Git y GitHub",
+        "cicd": "Integración y despliegue continuo en proyectos web",
+        "vercel": "Despliegue de aplicaciones frontend y proyectos con Next.js"
+      }
+    }
   },
   "services": {
     "section": {
@@ -58,79 +76,79 @@
     },
     "frontend": {
       "title": "Desarrollo Front-End",
-      "title1": "Desarrollo",
-      "title2": "Front-End",
-      "description": "Deseando ofrecer un trabajo de calidad a clientes y empresas.",
-      "task1": "Desarrollo completo de aplicaciones web, desde el concepto inicial hasta la implementación final.",
-      "task2": "Diseño de interfaces de usuario intuitivas y visualmente atractivas para una experiencia óptima.",
-      "task3": "Mejora de la interactividad para garantizar una experiencia de usuario satisfactoria.",
-      "task4": "Incorporación coherente de la identidad visual de su empresa en la aplicación.",
-      "task5": "Creación de representaciones visuales que ilustren la funcionalidad de la aplicación de manera clara y efectiva."
+      "title1": "Front-End",
+      "title2": "Development",
+      "description": "Deseo ofrecer un trabajo de calidad a clientes y empresas.",
+      "task1": "Construcción de aplicaciones web completas desde el concepto hasta el despliegue.",
+      "task2": "Creación de interfaces de usuario intuitivas para una experiencia óptima.",
+      "task3": "Diseño de interacciones atractivas para mejorar la satisfacción del usuario.",
+      "task4": "Incorporación de la identidad de marca de tu empresa en la aplicación.",
+      "task5": "Diseño de representaciones visuales para ilustrar la funcionalidad de la aplicación."
     },
     "backend": {
       "title": "Desarrollo Back-End",
-      "title1": "Desarrollo",
-      "title2": "Back-End",
-      "description": "Deseando ofrecer un trabajo de calidad a clientes y empresas.",
-      "task1": "Desarrollo del motor que impulsa su aplicación web.",
-      "task2": "Construcción de sistemas backend robustos para manejar el procesamiento de datos y la lógica empresarial.",
-      "task3": "Ajuste de los sistemas backend para mayor velocidad y eficiencia.",
-      "task4": "Optimización del rendimiento de los sistemas para garantizar un funcionamiento fluido bajo cargas elevadas.",
-      "task5": "Implementación de mecanismos para gestionar y resolver problemas de manera efectiva, asegurando la fiabilidad del sistema."
+      "title1": "Back-End",
+      "title2": "Development",
+      "description": "Deseo ofrecer un trabajo de calidad a clientes y empresas.",
+      "task1": "Construcción del motor que impulsa tu aplicación web.",
+      "task2": "Desarrollo de sistemas backend robustos para el procesamiento de datos y la lógica de negocio.",
+      "task3": "Ajuste y optimización de sistemas backend para velocidad y eficiencia.",
+      "task4": "Optimización para escalabilidad y rendimiento, garantizando un funcionamiento fluido con alta carga.",
+      "task5": "Implementación de mecanismos para gestionar y resolver incidencias, asegurando la fiabilidad del sistema."
     },
     "database": {
       "title": "Desarrollo de Bases de Datos",
-      "title1": "Desarrollo de",
-      "title2": "Bases de Datos",
-      "description": "Deseando ofrecer un trabajo de calidad a clientes y empresas.",
-      "task1": "Diseño de modelos de datos que representen con precisión los requisitos y relaciones de su aplicación.",
-      "task2": "Creación de esquemas de bases de datos estructurados y eficientes para organizar los datos de manera efectiva.",
-      "task3": "Implementación de técnicas de indexación para mejorar el rendimiento de las consultas y la recuperación de datos.",
-      "task4": "Análisis y optimización de consultas de bases de datos para mejorar el rendimiento general del sistema.",
-      "task5": "Establecimiento de procedimientos sólidos de copia de seguridad y recuperación para garantizar la integridad de los datos y la continuidad de las operaciones."
+      "title1": "Database",
+      "title2": "Development",
+      "description": "Deseo ofrecer un trabajo de calidad a clientes y empresas.",
+      "task1": "Diseño de modelos de datos que representen con precisión los requisitos y relaciones de la aplicación.",
+      "task2": "Creación de esquemas de base de datos estructurados y eficientes para organizar los datos.",
+      "task3": "Implementación de técnicas de indexación para mejorar el rendimiento de las consultas.",
+      "task4": "Análisis y optimización de consultas para mejorar el rendimiento global del sistema.",
+      "task5": "Establecimiento de procedimientos de backup y recuperación robustos para asegurar la integridad y continuidad."
     },
     "filemaker": {
       "title1": "Soluciones",
       "title2": "con FileMaker",
       "title": "Desarrollo con Claris FileMaker",
-      "description": "Diseño y programación de soluciones personalizadas con FileMaker Pro y FileMaker Server.",
-      "task1": "Automatización de procesos empresariales",
+      "description": "Diseño y desarrollo de soluciones a medida usando FileMaker Pro y FileMaker Server.",
+      "task1": "Automatización de procesos de negocio",
       "task2": "Integración con APIs REST y servicios externos",
       "task3": "Desarrollo de interfaces limpias y usables",
       "task4": "Despliegue en red local o web",
-      "task5": "Mantenimiento y evolución continua"
+      "task5": "Mantenimiento continuo y mejora"
     },
-    "viewmore": "Ver Más"
+    "viewmore": "Ver más"
   },
   "qualification": {
     "section": {
-      "title": "Formación",
-      "subtitle": "Mi viaje personal"
+      "title": "Trayectoria",
+      "subtitle": "Mi recorrido personal"
     },
     "education": {
-      "header": "Estudios",
+      "header": "Formación",
       "title": {
-        "title_1": "Ciclo Formativo de Grado Superior, Desarrollo de aplicaciones web",
-        "title_2": "Ciclo Formativo de Grado Superior, Administración de sistemas informáticos",
-        "title_3": "Ciclo Formativo de Grado Superior, Desarrollo de aplicaciones informáticas"
+        "title_1": "Ciclo Formativo de Grado Superior, Desarrollo de Aplicaciones Web",
+        "title_2": "Ciclo Formativo de Grado Superior, Administración de Sistemas",
+        "title_3": "Ciclo Formativo de Grado Superior, Desarrollo de Aplicaciones Informáticas"
       }
     },
     "experience": {
       "header": "Experiencia",
       "title": {
-        "job_1": "Desarrollador Automono e IT Especialista",
-        "job_2": "Titulo de trabajo 2"
+        "job_1": "Desarrollador Freelance y Especialista IT",
+        "job_2": "Puesto de trabajo 2"
       }
     },
-    "present": "Presente"
+    "present": "Actual"
   },
   "projects": {
     "section": {
       "title": "Proyectos",
-      "subtitle": "Trabajo más reciente"
+      "subtitle": "Trabajos recientes"
     },
     "data": {
-      "all": "Todo",
+      "all": "Todos",
       "app": "App",
       "collaboration": "Contribución",
       "package": "Paquete"
@@ -140,60 +158,60 @@
   "testimonials": {
     "section": {
       "title": "Testimonios",
-      "subtitle": "Mis clientes dicen"
+      "subtitle": "Mis clientes opinan"
     },
     "1": {
       "name": "Laura Martínez",
-      "quote": "\"Trabajar con este desarrollador ha sido un acierto total. Captó nuestras necesidades rápidamente y entregó un proyecto funcional y atractivo.\""
+      "quote": "\"Trabajar con este desarrollador fue un éxito total. Entendió nuestras necesidades rápidamente y entregó un proyecto funcional y atractivo.\""
     },
     "2": {
       "name": "David Gómez",
-      "quote": "\"El proyecto se completó en plazo y con una calidad excelente. La comunicación fue fluida y profesional en todo momento. ¡Recomendado al 100%!\""
+      "quote": "\"El proyecto se completó a tiempo y con una calidad excelente. La comunicación fue fluida y profesional en todo momento. ¡Muy recomendable!\""
     },
     "3": {
       "name": "Ana Torres",
-      "quote": "\"Supieron transformar nuestras ideas en una herramienta útil y sencilla. Muy satisfechos con el resultado y el soporte recibido tras la entrega.\""
+      "quote": "\"Convirtieron nuestras ideas en una herramienta útil y sencilla. Estamos muy satisfechos con el resultado y el soporte recibido tras la entrega.\""
     },
     "4": {
       "name": "Jorge Ramírez",
-      "quote": "\"Gran profesional. El trabajo superó nuestras expectativas y nos ayudó a optimizar procesos internos. Trabajaremos en futuros desarrollos.\""
+      "quote": "\"Gran profesional. El trabajo superó nuestras expectativas y nos ayudó a optimizar procesos internos. Sin duda contaremos con él para futuros desarrollos.\""
     }
   },
   "contact": {
     "section": {
-      "title": "Ponerse en contacto",
+      "title": "Contacta conmigo",
       "subtitle": "Contáctame"
     },
     "container": {
-      "title": "Háblame",
+      "title": "Hablemos",
       "card": {
-        "email": "Correo electrónico",
+        "email": "Email",
         "telephone": "Teléfono",
         "button": "Escríbeme"
       }
     },
     "form": {
-      "title": "Escríbeme tu proyecto",
+      "title": "Cuéntame tu proyecto",
       "name": {
         "tag": "Nombre",
-        "placeholder": "Inserta tu nombre"
+        "placeholder": "Introduce tu nombre"
       },
       "mail": {
         "tag": "Correo",
-        "placeholder": "Inserta tu correo"
+        "placeholder": "Introduce tu correo"
       },
       "project": {
         "tag": "Proyecto",
         "placeholder": "Escribe tu proyecto"
       },
-      "button": "Enviar mensaje",
-      "success": "¡El correo electrónico ha sido enviado exitosamente!",
-      "error": "No se pudo enviar el correo electrónico.",
-      "miss": "Faltan parámetros requeridos para enviar el correo electrónico."
+      "button": "Enviar Mensaje",
+      "success": "¡El email se ha enviado correctamente!",
+      "error": "No se pudo enviar el email.",
+      "miss": "Faltan parámetros obligatorios para enviar el email."
     }
   },
   "footer": {
-    "about": "Sobre mi",
+    "about": "Sobre mí",
     "services": "Servicios",
     "projects": "Proyectos"
   }

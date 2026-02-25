@@ -44,12 +44,30 @@
       "title": "Skills",
       "subtitle": "Developer and IT Support"
     },
+    "category": {
+      "programming": "Programming",
+      "it": "IT & Tools"
+    },
     "frontend": "Front-End Development",
     "backend": "Back-End Development",
-    "it": "IT Support",
+    "it_title": "IT Support",
     "basic": "Basic",
     "intermediate": "Intermediate",
-    "advanced": "Advanced"
+    "advanced": "Advanced",
+    "it": {
+      "sections": {
+        "systems": "Systems & DevOps",
+        "tools": "Tools & Platforms"
+      },
+      "details": {
+        "linux": "Basic Linux system administration and development environments",
+        "networking": "Networking fundamentals, configuration and troubleshooting",
+        "docker": "Application containerization and development environments",
+        "git": "Version control and collaborative workflows with Git and GitHub",
+        "cicd": "Continuous integration and deployment for web projects",
+        "vercel": "Frontend and Next.js application deployment"
+      }
+    }
   },
   "services": {
     "section": {
