@@ -6,6 +6,11 @@ const ITSystems = () => {
 
   const items = [
     {
+      name: "macOS",
+      level: t("skills.advanced"),
+      details: t("skills.it.details.macos"),
+    },
+    {
       name: "Linux",
       level: t("skills.intermediate"),
       details: t("skills.it.details.linux"),

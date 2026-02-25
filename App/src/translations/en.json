@@ -60,6 +60,7 @@
         "tools": "Tools & Platforms"
       },
       "details": {
+        "macos": "Advanced macOS system administration and development environments",
         "linux": "Basic Linux system administration and development environments",
         "networking": "Networking fundamentals, configuration and troubleshooting",
         "docker": "Application containerization and development environments",
