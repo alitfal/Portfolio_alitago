@@ -12,8 +12,8 @@
     "dark": "Dark Mode",
     "light": "Light Theme",
     "translate": "Translate",
-    "subtitle": "FileMaker & Web Developer",
-    "description": "Claris FileMaker and Full-Stack web application developer from the Canary Islands.",
+    "subtitle": "IT Specialist & FileMaker / Web Developer",
+    "description": "IT professional specialized in Claris FileMaker solutions and Full-Stack web application development, based in the Canary Islands.",
     "button": "Say Hello",
     "scroll": "Scroll Down"
   },
@@ -22,7 +22,7 @@
       "title": "About Me",
       "subtitle": "My introduction"
     },
-    "description": "As a Full-Stack web application developer, I design and develop both the frontend and backend, providing comprehensive and satisfying solutions for my clients.",
+    "description": "As an IT specialist and Full-Stack developer, I design and implement complete web applications, integrating frontend and backend with a focus on performance, scalability, and quality.",
     "button": "Curriculum Vitae",
     "info": {
       "experience": {
