@@ -43,6 +43,7 @@
   display: grid;
   align-items: flex-start;
   row-gap: 1rem;
+  grid-auto-rows: 1fr;
 }
 
 .skills__data {
@@ -50,6 +51,15 @@
   grid-template-columns: 18px 1fr; /* icono fijo + texto */
   column-gap: 0.75rem;
   align-items: start;
+  /* clave: mismo alto para todos */
+  height: 100%;
+  padding: 0.75rem 0.75rem;
+  border-radius: 0.75rem;
+}
+.skills__data > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .skills .bx-badge-check {
@@ -69,13 +79,21 @@
   font-size: var(--tiny-font-size);
 }
 
-/* Texto extra opcional (detalles por skill) */
 .skills__details {
   margin-top: 0.35rem;
   font-size: 0.9rem;
   line-height: 1.35;
   opacity: 0.85;
-  max-width: 34ch;
+
+  /* clave: mismo número de líneas = misma altura */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; /* prueba 2, 3 o 4 */
+  line-clamp: 5;
+  overflow: hidden;
+
+  /* ayuda a que todos ocupen un alto mínimo similar */
+  min-height: calc(0.9rem * 1.35 * 3);
 }
 
 /* BREAKPOINTS */

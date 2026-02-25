@@ -45,11 +45,11 @@
       "subtitle": "Desarrollo y Soporte IT"
     },
     "category": {
-      "programming": "Programación",
+      "programming": "Desarrollo",
       "it": "IT & Herramientas"
     },
-    "frontend": "Desarrollo Front-End",
-    "backend": "Desarrollo Back-End",
+    "frontend": "Front-End",
+    "backend": "Back-End",
     "it_title": "Soporte IT",
     "basic": "Básico",
     "intermediate": "Intermedio",
@@ -60,13 +60,16 @@
         "tools": "Herramientas y Plataformas"
       },
       "details": {
-        "macos": "Administración avanzada de sistemas macOS y entorno de desarrollo",
-        "linux": "Administración básica de sistemas Linux y entorno de desarrollo",
-        "networking": "Conceptos de redes, configuración y resolución de problemas",
-        "docker": "Contenerización de aplicaciones y entornos de desarrollo",
-        "git": "Control de versiones y trabajo colaborativo con Git y GitHub",
-        "cicd": "Integración y despliegue continuo en proyectos web",
-        "vercel": "Despliegue de aplicaciones frontend y proyectos con Next.js"
+        "macos": "Administración y optimización de entornos macOS para desarrollo, incluyendo configuración de sistema, seguridad, automatización y resolución avanzada de incidencias.",
+        "windows": "Gestión avanzada de entornos Windows en contextos corporativos y técnicos, con foco en configuración, automatización y soporte a equipos de desarrollo.",
+        "linux": "Administración de sistemas Linux en entornos de desarrollo y servidores, gestión de servicios, redes y resolución de incidencias operativas.",
+        "networking": "Diseño, configuración y troubleshooting de redes, con sólidos conocimientos en conectividad, seguridad y diagnóstico de problemas.",
+        "docker": "Contenerización de aplicaciones y entornos de desarrollo, asegurando portabilidad, consistencia y eficiencia en despliegues.",
+        "git": "Gestión de control de versiones y colaboración en equipo mediante flujos de trabajo estructurados y buenas prácticas de desarrollo.",
+        "cicd": "Automatización básica de procesos de integración y despliegue para mejorar la calidad y velocidad de entrega.",
+        "vercel": "Despliegue y gestión de aplicaciones frontend en entornos productivos, garantizando rendimiento y configuración eficiente.",
+        "cloudplatforms": "Uso de servicios en la nube para despliegue y soporte de aplicaciones, con enfoque en entornos escalables y confiables.",
+        "automation": "Automatización de tareas técnicas y operativas para optimizar procesos y aumentar la eficiencia del entorno de desarrollo."
       }
     }
   },

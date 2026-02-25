@@ -20,6 +20,16 @@ const ITTools = () => {
       level: t("skills.intermediate"),
       details: t("skills.it.details.vercel"),
     },
+    {
+      name: "Cloud Platforms",
+      level: t("skills.intermediate"),
+      details: t("skills.it.details.cloudplatforms"),
+    },
+    {
+      name: "Automation / Scripting",
+      level: t("skills.intermediate"),
+      details: t("skills.it.details.automation"),
+    },
   ];
 
   return (

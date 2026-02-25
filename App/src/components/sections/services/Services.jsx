@@ -44,9 +44,9 @@ const Services = () => {
               <h3 className="services__modal-title">
                 {t("services.frontend.title")}
               </h3>
-              <p className="services__modal-description">
+              {/* <p className="services__modal-description">
                 {t("services.frontend.description")}
-              </p>
+              </p> */}
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon" />
@@ -111,9 +111,9 @@ const Services = () => {
               <h3 className="services__modal-title">
                 {t("services.backend.title")}
               </h3>
-              <p className="services__modal-description">
+              {/* <p className="services__modal-description">
                 {t("services.backend.description")}
-              </p>
+              </p> */}
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon" />
@@ -178,9 +178,9 @@ const Services = () => {
               <h3 className="services__modal-title">
                 {t("services.database.title")}
               </h3>
-              <p className="services__modal-description">
+              {/* <p className="services__modal-description">
                 {t("services.database.description")}
-              </p>
+              </p> */}
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon" />
@@ -245,9 +245,9 @@ const Services = () => {
               <h3 className="services__modal-title">
                 {t("services.filemaker.title")}
               </h3>
-              <p className="services__modal-description">
+              {/* <p className="services__modal-description">
                 {t("services.filemaker.description")}
-              </p>
+              </p> */}
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon" />

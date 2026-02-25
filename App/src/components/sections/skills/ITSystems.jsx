@@ -11,6 +11,11 @@ const ITSystems = () => {
       details: t("skills.it.details.macos"),
     },
     {
+      name: "Microsoft Windows",
+      level: t("skills.advanced"),
+      details: t("skills.it.details.windows"),
+    },
+    {
       name: "Linux",
       level: t("skills.intermediate"),
       details: t("skills.it.details.linux"),

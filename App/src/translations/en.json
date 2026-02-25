@@ -45,11 +45,11 @@
       "subtitle": "Developer and IT Support"
     },
     "category": {
-      "programming": "Programming",
+      "programming": "Developer",
       "it": "IT & Tools"
     },
-    "frontend": "Front-End Development",
-    "backend": "Back-End Development",
+    "frontend": "Front-End",
+    "backend": "Back-End",
     "it_title": "IT Support",
     "basic": "Basic",
     "intermediate": "Intermediate",
@@ -60,13 +60,16 @@
         "tools": "Tools & Platforms"
       },
       "details": {
-        "macos": "Advanced macOS system administration and development environments",
-        "linux": "Basic Linux system administration and development environments",
-        "networking": "Networking fundamentals, configuration and troubleshooting",
-        "docker": "Application containerization and development environments",
-        "git": "Version control and collaborative workflows with Git and GitHub",
-        "cicd": "Continuous integration and deployment for web projects",
-        "vercel": "Frontend and Next.js application deployment"
+        "macos": "Administration and optimization of macOS development environments, including system configuration, security, automation, and advanced troubleshooting.",
+        "windows": "Advanced management of Windows environments in corporate and technical contexts, focused on configuration, automation, and support for development teams.",
+        "linux": "Administration of Linux systems in development and server environments, including service management, networking, and operational troubleshooting.",
+        "networking": "Design, configuration, and troubleshooting of networks, with solid knowledge of connectivity, security, and issue diagnosis.",
+        "docker": "Containerization of applications and development environments, ensuring portability, consistency, and deployment efficiency.",
+        "git": "Version control management and team collaboration through structured workflows and development best practices.",
+        "cicd": "Basic automation of integration and deployment processes to improve delivery speed and quality.",
+        "vercel": "Deployment and management of frontend applications in production environments, ensuring performance and efficient configuration.",
+        "cloudplatforms": "Use of cloud services for application deployment and support, focused on scalable and reliable environments.",
+        "automation": "Automation of technical and operational tasks to optimize processes and improve development environment efficiency."
       }
     }
   },
