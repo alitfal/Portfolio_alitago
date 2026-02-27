@@ -42,10 +42,10 @@
   "skills": {
     "section": {
       "title": "Skills",
-      "subtitle": "Developer and IT Support"
+      "subtitle": "Development & IT Support"
     },
     "category": {
-      "programming": "Developer",
+      "programming": "Development",
       "it": "IT & Tools"
     },
     "frontend": "Front-End",
@@ -76,13 +76,46 @@
   "services": {
     "section": {
       "title": "Services",
-      "subtitle": "What I offer"
+      "subtitle": "What I Offer"
+    },
+    "group": {
+      "it": "IT Services",
+      "development": "Development Services"
+    },
+    "itops": {
+      "title": "IT Support & Operations",
+      "title1": "IT",
+      "title2": "Operations",
+      "task1": "Administration and maintenance of workstations and IT environments.",
+      "task2": "Configuration, optimization, and support of systems (macOS, Windows, and Linux).",
+      "task3": "Automation of operational tasks to improve efficiency and consistency.",
+      "task4": "System-level troubleshooting and software issue resolution.",
+      "task5": "Security improvements and implementation of best practices."
+    },
+    "networking": {
+      "title": "Networking & Connectivity",
+      "title1": "Network",
+      "title2": "Support",
+      "task1": "Configuration and support of wired and wireless networks.",
+      "task2": "Diagnosis of connectivity, latency, DNS, and access issues.",
+      "task3": "Basic firewall configuration, NAT, and network segmentation.",
+      "task4": "Secure VPN setup and remote access support.",
+      "task5": "Infrastructure documentation and continuous network improvement."
+    },
+    "deployment": {
+      "title": "Deployment & Environments",
+      "title1": "Deployment",
+      "title2": "& Environments",
+      "task1": "Setup of development and production environments.",
+      "task2": "Basic containerization and environment standardization using Docker.",
+      "task3": "Web application deployment and environment configuration.",
+      "task4": "Basic CI/CD workflow automation.",
+      "task5": "Post-deployment monitoring and stability support."
     },
     "frontend": {
       "title": "Front-End Development",
       "title1": "Front-End",
       "title2": "Development",
-      "description": "Wishing to offer quality work to clients and companies.",
       "task1": "Building comprehensive web applications from concept to deployment.",
       "task2": "Crafting intuitive user interfaces for an optimal experience.",
       "task3": "Creating engaging interactions to optimize user satisfaction.",
@@ -93,34 +126,31 @@
       "title": "Back-End Development",
       "title1": "Back-End",
       "title2": "Development",
-      "description": "Wishing to offer quality work to clients and companies.",
       "task1": "Crafting the engine powering your web application.",
       "task2": "Building robust backend systems to handle data processing and business logic.",
-      "task3": "Fine-tuning of backend systems for speed and efficiency.",
-      "task4": "Optimizing systems for scalability and performance to ensure smooth operation under heavy loads.",
-      "task5": "Implementing mechanisms to manage and resolve issues effectively, ensuring system reliability."
+      "task3": "Fine-tuning backend systems for speed and efficiency.",
+      "task4": "Optimizing systems for scalability and performance under heavy loads.",
+      "task5": "Implementing mechanisms to manage and resolve issues effectively."
     },
     "database": {
       "title": "Database Development",
       "title1": "Database",
       "title2": "Development",
-      "description": "Wishing to offer quality work to clients and companies.",
-      "task1": "Designing data models that accurately represent the application's requirements and relationships.",
-      "task2": "Creating structured and efficient database schemas to organize data effectively.",
-      "task3": "Implementing indexing techniques to improve query performance and data retrieval.",
-      "task4": "Analyzing and optimizing database queries to enhance overall system performance.",
-      "task5": "Establishing robust backup and recovery procedures to ensure data integrity and continuity of operations."
+      "task1": "Designing accurate and scalable data models.",
+      "task2": "Creating structured and efficient database schemas.",
+      "task3": "Implementing indexing strategies to improve performance.",
+      "task4": "Analyzing and optimizing queries for better efficiency.",
+      "task5": "Establishing robust backup and recovery procedures."
     },
     "filemaker": {
       "title1": "Solutions",
       "title2": "with FileMaker",
       "title": "Development with Claris FileMaker",
-      "description": "Design and development of custom solutions using FileMaker Pro and FileMaker Server.",
-      "task1": "Business process automation",
-      "task2": "Integration with REST APIs and external services",
-      "task3": "Development of clean and usable interfaces",
-      "task4": "Deployment on local network or web",
-      "task5": "Continuous maintenance and improvement"
+      "task1": "Business process automation.",
+      "task2": "Integration with REST APIs and external services.",
+      "task3": "Development of clean and usable interfaces.",
+      "task4": "Deployment on local networks or web environments.",
+      "task5": "Continuous maintenance and improvement."
     },
     "viewmore": "View More"
   },
