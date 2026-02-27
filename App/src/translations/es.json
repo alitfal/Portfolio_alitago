@@ -78,6 +78,40 @@
       "title": "Servicios",
       "subtitle": "Lo que ofrezco"
     },
+    "group": {
+      "it": "Servicios IT",
+      "development": "Servicios de Desarrollo"
+    },
+    "itops": {
+      "title": "Soporte y Operaciones IT",
+      "title1": "IT",
+      "title2": "Operations",
+      "task1": "Administración y mantenimiento de equipos y entornos de trabajo.",
+      "task2": "Configuración, optimización y soporte de sistemas (macOS, Windows y Linux).",
+      "task3": "Automatización de tareas operativas para mejorar eficiencia y consistencia.",
+      "task4": "Diagnóstico y resolución de incidencias a nivel sistema y software.",
+      "task5": "Mejora de la seguridad y buenas prácticas en el entorno de trabajo."
+    },
+    "networking": {
+      "title": "Networking y Conectividad",
+      "title1": "Network",
+      "title2": "Support",
+      "task1": "Configuración y soporte de redes cableadas e inalámbricas.",
+      "task2": "Diagnóstico de conectividad, latencia, DNS y problemas de acceso.",
+      "task3": "Configuración básica de firewalls, NAT y segmentación de red.",
+      "task4": "Soporte de VPNs y acceso remoto seguro.",
+      "task5": "Documentación y mejora continua de la infraestructura de red."
+    },
+    "deployment": {
+      "title": "Despliegue y Entornos",
+      "title1": "Deployment",
+      "title2": "& Environments",
+      "task1": "Preparación de entornos de desarrollo y producción.",
+      "task2": "Contenerización básica y estandarización de entornos con Docker.",
+      "task3": "Despliegue de aplicaciones web y configuración de variables de entorno.",
+      "task4": "Automatización básica de despliegues con flujos CI/CD.",
+      "task5": "Monitorización y soporte post-despliegue para asegurar estabilidad."
+    },
     "frontend": {
       "title": "Desarrollo Front-End",
       "title1": "Front-End",

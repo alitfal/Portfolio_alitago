@@ -29,9 +29,7 @@ const Header = () => {
   return (
     <header className={`header ${headerClass}`}>
       <nav className="nav container">
-        <a href="/" className="nav__logo">
-          alitago
-        </a>
+        <a href="/" className="nav__logo"></a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">

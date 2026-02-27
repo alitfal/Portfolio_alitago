@@ -8,279 +8,187 @@ const Services = () => {
   const [toggleState, setToggleState] = useState(0);
   const toggleTab = (index) => setToggleState(index);
 
+  // 1) IT Services (nuevo bloque)
+  const itServices = [
+    {
+      modalIndex: 1,
+      icon: "uil uil-setting",
+      title1Key: "services.itops.title1",
+      title2Key: "services.itops.title2",
+      modalTitleKey: "services.itops.title",
+      tasks: [
+        "services.itops.task1",
+        "services.itops.task2",
+        "services.itops.task3",
+        "services.itops.task4",
+        "services.itops.task5",
+      ],
+    },
+    {
+      modalIndex: 2,
+      icon: "uil uil-wifi",
+      title1Key: "services.networking.title1",
+      title2Key: "services.networking.title2",
+      modalTitleKey: "services.networking.title",
+      tasks: [
+        "services.networking.task1",
+        "services.networking.task2",
+        "services.networking.task3",
+        "services.networking.task4",
+        "services.networking.task5",
+      ],
+    },
+    {
+      modalIndex: 3,
+      icon: "uil uil-cloud",
+      title1Key: "services.deployment.title1",
+      title2Key: "services.deployment.title2",
+      modalTitleKey: "services.deployment.title",
+      tasks: [
+        "services.deployment.task1",
+        "services.deployment.task2",
+        "services.deployment.task3",
+        "services.deployment.task4",
+        "services.deployment.task5",
+      ],
+    },
+  ];
+
+  // 2) Development Services (tus servicios actuales)
+  // Para no romper nada: los dejo con las mismas keys que ya tenías.
+  // Reasigno índices de modal a partir de 4 para que no colisionen con IT.
+  const devServices = [
+    {
+      modalIndex: 4,
+      icon: "uil uil-web-grid",
+      title1Key: "services.frontend.title1",
+      title2Key: "services.frontend.title2",
+      modalTitleKey: "services.frontend.title",
+      tasks: [
+        "services.frontend.task1",
+        "services.frontend.task2",
+        "services.frontend.task3",
+        "services.frontend.task4",
+        "services.frontend.task5",
+      ],
+    },
+    {
+      modalIndex: 5,
+      icon: "uil uil-arrow",
+      title1Key: "services.backend.title1",
+      title2Key: "services.backend.title2",
+      modalTitleKey: "services.backend.title",
+      tasks: [
+        "services.backend.task1",
+        "services.backend.task2",
+        "services.backend.task3",
+        "services.backend.task4",
+        "services.backend.task5",
+      ],
+    },
+    {
+      modalIndex: 6,
+      icon: "uil uil-edit",
+      title1Key: "services.database.title1",
+      title2Key: "services.database.title2",
+      modalTitleKey: "services.database.title",
+      tasks: [
+        "services.database.task1",
+        "services.database.task2",
+        "services.database.task3",
+        "services.database.task4",
+        "services.database.task5",
+      ],
+    },
+    {
+      modalIndex: 7,
+      icon: "uil uil-database-alt",
+      title1Key: "services.filemaker.title1",
+      title2Key: "services.filemaker.title2",
+      modalTitleKey: "services.filemaker.title",
+      tasks: [
+        "services.filemaker.task1",
+        "services.filemaker.task2",
+        "services.filemaker.task3",
+        "services.filemaker.task4",
+        "services.filemaker.task5",
+      ],
+    },
+  ];
+
+  const ServiceCard = ({ service }) => (
+    <div className="services__content">
+      <div>
+        <i className={`${service.icon} services__icon`} />
+        <h3 className="services__title">
+          {t(service.title1Key)}
+          <br />
+          {t(service.title2Key)}
+        </h3>
+      </div>
+
+      <span
+        className="services__button"
+        onClick={() => toggleTab(service.modalIndex)}
+      >
+        {t("services.viewmore")}
+        <i className="uil uil-arrow-right services__button-icon" />
+      </span>
+
+      <div
+        className={
+          toggleState === service.modalIndex
+            ? "services__modal active-modal"
+            : "services__modal"
+        }
+      >
+        <div className="services__modal-content">
+          <i
+            onClick={() => toggleTab(0)}
+            className="uil uil-times services__modal-close"
+          />
+          <h3 className="services__modal-title">{t(service.modalTitleKey)}</h3>
+
+          <ul className="services__modal-services grid">
+            {service.tasks.map((taskKey) => (
+              <li className="services__modal-service" key={taskKey}>
+                <i className="uil uil-check-circle services__modal-icon" />
+                <p className="services__modal-info">{t(taskKey)}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <section className="services section" id="services">
       <h2 className="section__title">{t("services.section.title")}</h2>
       <span className="section__subtitle">
         {t("services.section.subtitle")}
       </span>
+
       <div className="services__container container grid">
-        {/* Frontend */}
-        <div className="services__content">
-          <div>
-            <i className="uil uil-web-grid services__icon" />
-            <h3 className="services__title">
-              {t("services.frontend.title1")}
-              <br />
-              {t("services.frontend.title2")}
-            </h3>
-          </div>
-          <span className="services__button" onClick={() => toggleTab(1)}>
-            {t("services.viewmore")}
-            <i className="uil uil-arrow-right services__button-icon" />
-          </span>
-          <div
-            className={
-              toggleState === 1
-                ? "services__modal active-modal"
-                : "services__modal"
-            }
-          >
-            <div className="services__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times services__modal-close"
-              />
-              <h3 className="services__modal-title">
-                {t("services.frontend.title")}
-              </h3>
-              {/* <p className="services__modal-description">
-                {t("services.frontend.description")}
-              </p> */}
-              <ul className="services__modal-services grid">
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.frontend.task1")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.frontend.task2")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.frontend.task3")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.frontend.task4")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.frontend.task5")}
-                  </p>
-                </li>
-              </ul>
-            </div>
+        {/* ===== IT SERVICES ===== */}
+        <div className="services__group">
+          <h3 className="services__group-title">{t("services.group.it")}</h3>
+          <div className="services__group-grid">
+            {itServices.map((service) => (
+              <ServiceCard key={service.modalIndex} service={service} />
+            ))}
           </div>
         </div>
-        {/* Backend */}
-        <div className="services__content">
-          <div>
-            <i className="uil uil-arrow services__icon" />
-            <h3 className="services__title">
-              {t("services.backend.title1")}
-              <br />
-              {t("services.backend.title2")}
-            </h3>
-          </div>
-          <span onClick={() => toggleTab(2)} className="services__button">
-            {t("services.viewmore")}
-            <i className="uil uil-arrow-right services__button-icon" />
-          </span>
-          <div
-            className={
-              toggleState === 2
-                ? "services__modal active-modal"
-                : "services__modal"
-            }
-          >
-            <div className="services__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times services__modal-close"
-              />
-              <h3 className="services__modal-title">
-                {t("services.backend.title")}
-              </h3>
-              {/* <p className="services__modal-description">
-                {t("services.backend.description")}
-              </p> */}
-              <ul className="services__modal-services grid">
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.backend.task1")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.backend.task2")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.backend.task3")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.backend.task4")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.backend.task5")}
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/* Database */}
-        <div className="services__content">
-          <div>
-            <i className="uil uil-edit services__icon" />
-            <h3 className="services__title">
-              {t("services.database.title1")}
-              <br />
-              {t("services.database.title2")}
-            </h3>
-          </div>
-          <span onClick={() => toggleTab(3)} className="services__button">
-            {t("services.viewmore")}
-            <i className="uil uil-arrow-right services__button-icon" />
-          </span>
-          <div
-            className={
-              toggleState === 3
-                ? "services__modal active-modal"
-                : "services__modal"
-            }
-          >
-            <div className="services__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times services__modal-close"
-              />
-              <h3 className="services__modal-title">
-                {t("services.database.title")}
-              </h3>
-              {/* <p className="services__modal-description">
-                {t("services.database.description")}
-              </p> */}
-              <ul className="services__modal-services grid">
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.database.task1")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.database.task2")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.database.task3")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.database.task4")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.database.task5")}
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/* FileMaker */}
-        <div className="services__content">
-          <div>
-            <i className="uil uil-database-alt services__icon" />
-            <h3 className="services__title">
-              {t("services.filemaker.title1")}
-              <br />
-              {t("services.filemaker.title2")}
-            </h3>
-          </div>
-          <span onClick={() => toggleTab(4)} className="services__button">
-            {t("services.viewmore")}
-            <i className="uil uil-arrow-right services__button-icon" />
-          </span>
-          <div
-            className={
-              toggleState === 4
-                ? "services__modal active-modal"
-                : "services__modal"
-            }
-          >
-            <div className="services__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times services__modal-close"
-              />
-              <h3 className="services__modal-title">
-                {t("services.filemaker.title")}
-              </h3>
-              {/* <p className="services__modal-description">
-                {t("services.filemaker.description")}
-              </p> */}
-              <ul className="services__modal-services grid">
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.filemaker.task1")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.filemaker.task2")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.filemaker.task3")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.filemaker.task4")}
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon" />
-                  <p className="services__modal-info">
-                    {t("services.filemaker.task5")}
-                  </p>
-                </li>
-              </ul>
-            </div>
+
+        {/* ===== DEVELOPMENT SERVICES ===== */}
+        <div className="services__group">
+          <h3 className="services__group-title">
+            {t("services.group.development")}
+          </h3>
+          <div className="services__group-grid">
+            {devServices.map((service) => (
+              <ServiceCard key={service.modalIndex} service={service} />
+            ))}
           </div>
         </div>
       </div>

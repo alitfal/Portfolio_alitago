@@ -1,32 +1,46 @@
 export const metadata = {
-  title: 'alitago',
-  author: 'Angel Luis Litago Falces',
-  description: 'Full-Stack web application developer and Claris FileMaker Developer, rider and diver.',
-  keywords: 'alitago, website, portfolio, cv, curriculum, vitae, linkedin, github, docker, dockerhub, node, nodejs, npm, npmjs, filemaker, git, html, css, javascript, typescript, react, next, nextjs, vercel, about, contact, home, projects, qualification, services, skills, testimonials, translation, english, spanish, japanese, light, theme, dark, mode',
+  title: "Angel Luis Litago Falces - Portfolio",
+  author: "Angel Luis Litago Falces",
+  description:
+    "Full-Stack web application developer and Claris FileMaker Developer, rider and diver.",
+  keywords:
+    "alitago, website, portfolio, cv, curriculum, vitae, linkedin, github, docker, dockerhub, node, nodejs, npm, npmjs, filemaker, git, html, css, javascript, typescript, react, next, nextjs, vercel, about, contact, home, projects, qualification, services, skills, testimonials, translation, english, spanish, japanese, light, theme, dark, mode",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <head>
-        <meta charSet='UTF-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <meta name='author' content={metadata.author} />
-        <meta name='description' content={metadata.description} />
-        <meta name='keywords' content={metadata.keywords} />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content={metadata.author} />
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content="https://avatars.githubusercontent.com/u/17743628?s=400&u=e64e7cc9111abc5e2cc6e9c6e9ace7afe1ca92c6&v=4" />
-        <meta property="og:url" content="https://portfolio-alitago.vercel.app/" />
+        <meta
+          property="og:image"
+          content="https://avatars.githubusercontent.com/u/17743628?s=400&u=e64e7cc9111abc5e2cc6e9c6e9ace7afe1ca92c6&v=4"
+        />
+        <meta
+          property="og:url"
+          content="https://portfolio-alitago.vercel.app/"
+        />
         <title>{metadata.title}</title>
-        <link rel='icon' href='/favicon.ico' />
-        <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' />
-        <link rel='stylesheet' href='https://unicons.iconscout.com/release/v4.0.0/css/line.css' />
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
       </head>
       <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id='root'>{children}</div>
+        <div id="root">{children}</div>
       </body>
     </html>
   );
-};
+}
