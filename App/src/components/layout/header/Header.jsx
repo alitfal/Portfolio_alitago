@@ -112,6 +112,20 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a
+                href="#testimonials"
+                onClick={() => setActiveNav("#testimonials")}
+                className={
+                  activeNav === "#testimonials"
+                    ? "nav__link active-link"
+                    : "nav__link"
+                }
+              >
+                <i className="uil uil-message nav__icon" />{" "}
+                {t("header.testimonials")}
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
                 href="#contact"
                 onClick={() => setActiveNav("#contact")}
                 className={

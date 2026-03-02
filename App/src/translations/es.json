@@ -6,6 +6,7 @@
     "skills": "Habilidades",
     "services": "Servicios",
     "projects": "Proyectos",
+    "testimonials": "Reseñas",
     "contact": "Contacto"
   },
   "home": {
@@ -195,8 +196,8 @@
   },
   "testimonials": {
     "section": {
-      "title": "Testimonios",
-      "subtitle": "Mis clientes opinan"
+      "title": "Reseñas",
+      "subtitle": "Los clientes opinan"
     },
     "1": {
       "name": "Laura Martínez",
