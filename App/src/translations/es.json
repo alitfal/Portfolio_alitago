@@ -213,6 +213,14 @@
     "4": {
       "name": "Jorge Ramírez",
       "quote": "\"Gran profesional. El trabajo superó nuestras expectativas y nos ayudó a optimizar procesos internos. Sin duda contaremos con él para futuros desarrollos.\""
+    },
+    "5": {
+      "name": "Carlos Herrera",
+      "quote": "\"Nos ayudó a reorganizar y optimizar toda nuestra infraestructura IT. Mejoró el rendimiento de los equipos y resolvió problemas de red que arrastrábamos desde hacía meses. Profesional y resolutivo.\""
+    },
+    "6": {
+      "name": "Marta López",
+      "quote": "\"Su soporte IT ha sido clave para nuestro equipo. Automatizó procesos internos, mejoró la seguridad de nuestros sistemas y redujo significativamente las incidencias técnicas. Totalmente recomendable.\""
     }
   },
   "contact": {
