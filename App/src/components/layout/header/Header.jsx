@@ -120,7 +120,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-message nav__icon" />{" "}
+                <i className="uil uil-comment-dots nav__icon" />{" "}
                 {t("header.testimonials")}
               </a>
             </li>
