@@ -18,11 +18,14 @@
 }
 
 .about__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* asegura que todo esté centrado horizontalmente */
   background-color: var(--container-color);
   border: var(--container-border);
   border-radius: 0.75rem;
-  text-align: center;
   padding: 1rem 1.25rem;
+  text-align: center;
 }
 
 .about__icon {
@@ -33,19 +36,23 @@
 .about__title {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
+  margin-bottom: 0.1rem; /* reduce aún más el espacio con el subtítulo */
 }
 
 .about__subtitle {
   font-size: var(--tiny-font-size);
+  line-height: 1.2;
+  margin-top: 0rem; /* elimina separación extra */
 }
 
 /* TEXTO */
 .about__description {
-  padding: 0;
-  margin-bottom: var(--mb-2-5);
   text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
+  margin-bottom: var(--mb-2-5);
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 0;
 }
 
 /* ================= BREAKPOINTS ================= */
