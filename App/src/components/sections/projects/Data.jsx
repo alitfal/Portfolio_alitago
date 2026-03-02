@@ -8,9 +8,9 @@ const projectsNav = [
   {
     name: "collaboration",
   },
-  {
-    name: "package",
-  },
+  // {
+  //   name: "package",
+  // },
 ];
 
 const projectsData = [
@@ -50,24 +50,24 @@ const projectsData = [
     link: "#",
     repository: "#",
   },
-  {
-    id: 5,
-    category: "package",
-    imageLight: "/images/contribution/github/github_light.png",
-    imageDark: "/images/contribution/github/github_dark.png",
-    title: "utils-kit",
-    link: "#",
-    repository: "#",
-  },
-  {
-    id: 6,
-    category: "package",
-    imageLight: "/images/contribution/github/github_light.png",
-    imageDark: "/images/contribution/github/github_dark.png",
-    title: "json-helper",
-    link: "#",
-    repository: "#",
-  },
+  // {
+  //   id: 5,
+  //   category: "package",
+  //   imageLight: "/images/contribution/github/github_light.png",
+  //   imageDark: "/images/contribution/github/github_dark.png",
+  //   title: "utils-kit",
+  //   link: "#",
+  //   repository: "#",
+  // },
+  // {
+  //   id: 6,
+  //   category: "package",
+  //   imageLight: "/images/contribution/github/github_light.png",
+  //   imageDark: "/images/contribution/github/github_dark.png",
+  //   title: "json-helper",
+  //   link: "#",
+  //   repository: "#",
+  // },
 ];
 
 export { projectsNav, projectsData };
