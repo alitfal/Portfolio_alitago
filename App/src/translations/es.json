@@ -84,8 +84,8 @@
     },
     "itops": {
       "title": "Soporte y Operaciones IT",
-      "title1": "IT",
-      "title2": "Operations",
+      "title1": "Soporte IT",
+      "title2": "Mantenimiento",
       "task1": "Administración y mantenimiento de equipos y entornos de trabajo.",
       "task2": "Configuración, optimización y soporte de sistemas (macOS, Windows y Linux).",
       "task3": "Automatización de tareas operativas para mejorar eficiencia y consistencia.",
@@ -94,8 +94,8 @@
     },
     "networking": {
       "title": "Networking y Conectividad",
-      "title1": "Network",
-      "title2": "Support",
+      "title1": "Networking",
+      "title2": "Conectividad",
       "task1": "Configuración y soporte de redes cableadas e inalámbricas.",
       "task2": "Diagnóstico de conectividad, latencia, DNS y problemas de acceso.",
       "task3": "Configuración básica de firewalls, NAT y segmentación de red.",
@@ -104,8 +104,8 @@
     },
     "deployment": {
       "title": "Despliegue y Entornos",
-      "title1": "Deployment",
-      "title2": "& Environments",
+      "title1": "Despliegues",
+      "title2": "Entornos",
       "task1": "Preparación de entornos de desarrollo y producción.",
       "task2": "Contenerización básica y estandarización de entornos con Docker.",
       "task3": "Despliegue de aplicaciones web y configuración de variables de entorno.",

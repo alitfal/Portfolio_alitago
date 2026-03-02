@@ -29,21 +29,17 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  grid-auto-rows: minmax(220px, 1fr); /* altura consistente sin deformar */
+  grid-auto-rows: minmax(220px, 1fr);
 }
 
-/* Card ocupa toda la altura de su fila (para alineación perfecta) */
+/* Card ocupa toda la altura de su fila */
 .services__content {
   height: 100%;
   position: relative;
   background-color: var(--container-color);
   border: var(--container-border);
   border-radius: 1.25rem;
-
-  /* IMPORTANTE: quita el padding gigante */
   padding: 2.25rem 2.25rem;
-
-  /* Coloca arriba (icono+título) y abajo (botón) */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,7 +50,6 @@
   gap: 0.75rem;
 }
 
-/* (opcional) empuja el botón "Ver más" hacia abajo para consistencia */
 .services__button {
   color: var(--title-color);
   font-size: var(--small-font-size);
@@ -62,27 +57,25 @@
   align-items: center;
   column-gap: 0.25rem;
   cursor: pointer;
-
   margin-top: 1.5rem;
-  align-self: flex-start; /* abajo a la izquierda */
+  align-self: flex-start;
 }
 
-/* ===== ICON / TITLES (tus estilos) ===== */
+/* ===== ICON / TITLES ===== */
 .services__icon {
   display: block;
   font-size: 2rem;
   color: var(--title-color);
-  margin-bottom: 0; /* quita margen viejo */
+  margin-bottom: 0;
 }
 
 .services__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
-  margin: 0; /* evita saltos raros */
+  margin: 0;
   text-align: left;
 }
 
-/* Hover icon */
 .services__button-icon {
   font-size: 1rem;
   transition: 0.4s;
@@ -92,7 +85,7 @@
   transform: translateX(0.25rem);
 }
 
-/* ===== MODAL (tu código, sin cambios funcionales) ===== */
+/* ===== MODAL ===== */
 .services__modal {
   position: fixed;
   top: 0;
@@ -103,7 +96,7 @@
   z-index: var(--z-modal);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; /* centrado vertical en desktop */
   padding: 0 1rem;
   opacity: 0;
   visibility: hidden;
@@ -112,10 +105,14 @@
 
 .services__modal-content {
   width: 500px;
+  max-width: 100%; /* ← nunca supera el viewport */
+  max-height: 90vh; /* ← no se sale por arriba/abajo */
+  overflow-y: auto; /* ← scroll si el contenido es largo */
   position: relative;
   background-color: var(--container-color);
   padding: 4.5rem 2.5rem 2.5rem;
   border-radius: 1.5rem;
+  box-sizing: border-box; /* ← padding incluido en el ancho */
 }
 
 .services__modal-close {
@@ -171,7 +168,7 @@
 
 /* ===== BREAKPOINTS ===== */
 
-/* <= 992px: una columna de grupos, pero cards en 2 columnas */
+/* <= 992px */
 @media screen and (max-width: 992px) {
   .services__container {
     grid-template-columns: 1fr;
@@ -198,13 +195,30 @@
   .services__group-grid {
     grid-auto-rows: 220px;
   }
+
+  /* Modal ajustado para móvil */
+  .services__modal {
+    align-items: flex-end; /* ← modal sube desde abajo (más natural en móvil) */
+    padding: 0;
+  }
+
+  .services__modal-content {
+    width: 100%;
+    max-height: 85vh;
+    border-radius: 1.5rem 1.5rem 0 0; /* ← esquinas redondeadas solo arriba */
+    padding: 4rem 1.5rem 2rem;
+  }
+
+  .services__modal-description {
+    padding: 0 1rem;
+  }
 }
 
-/* <= 576px: cards a 1 columna */
+/* <= 576px */
 @media screen and (max-width: 576px) {
   .services__group-grid {
     grid-template-columns: 1fr;
-    grid-auto-rows: auto; /* deja crecer por contenido en móvil */
+    grid-auto-rows: auto;
   }
 
   .services__modal-description {
