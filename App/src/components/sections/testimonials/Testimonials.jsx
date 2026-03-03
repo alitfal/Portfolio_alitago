@@ -23,6 +23,7 @@ const Testimonials = () => {
         loop={true}
         grabCursor={true}
         spaceBetween={24}
+        autoHeight={false}
         autoplay={{
           delay: 8_000,
           disableOnInteraction: false,

@@ -2,12 +2,31 @@
   width: 750px;
 }
 
+/* Iguala la altura de todos los slides */
+.testimonial__container .swiper-wrapper {
+  align-items: stretch;
+}
+
+.testimonial__container .swiper-slide {
+  height: auto !important; /* override del height inline que pone Swiper */
+}
+
 .testimonial__card {
   background-color: var(--container-color);
   border: var(--container-border);
   padding: 1.5rem 2rem;
   border-radius: 1.5rem;
   margin-bottom: var(--mb-3);
+  height: 100%; /* ocupa todo el alto del slide */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Empuja la descripción para que ocupe el espacio restante */
+.testimonial__description {
+  font-size: var(--small-font-size);
+  flex: 1;
 }
 
 .testimonial__img {
@@ -22,10 +41,6 @@
   margin-bottom: var(--mb-0-25);
 }
 
-.testimonial__description {
-  font-size: var(--small-font-size);
-}
-
 /* Swiper Class */
 .swiper-pagination-bullet {
   background-color: var(--text-color) !important;
@@ -36,7 +51,6 @@
 }
 
 /* BREAKPOINTS */
-/* For large devices */
 @media screen and (max-width: 992px) {
   .testimonial__container {
     width: initial;
@@ -47,11 +61,9 @@
   }
 }
 
-/* For medium devices */
-@media screen and (max-width: 768px) {}
-
-/* For small devices */
-@media screen and (max-width: 576px) {}
-
-/* For tiny devices */
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 350px) {
+}
