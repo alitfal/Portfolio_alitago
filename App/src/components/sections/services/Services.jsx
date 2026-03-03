@@ -25,7 +25,7 @@ const Services = () => {
     },
     {
       modalIndex: 2,
-      icon: "uil uil-network-chart", // Networking → red
+      icon: "uil uil-signal", // Networking → red
       title1Key: "services.networking.title1",
       title2Key: "services.networking.title2",
       modalTitleKey: "services.networking.title",
