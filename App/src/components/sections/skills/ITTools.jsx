@@ -8,26 +8,31 @@ const ITTools = () => {
     {
       name: "Git / GitHub",
       level: t("skills.intermediate"),
+      icon: "bxl-git",
       details: t("skills.it.details.git"),
     },
     {
       name: "CI / CD",
       level: t("skills.basic"),
+      icon: "bx-infinite",
       details: t("skills.it.details.cicd"),
     },
     {
       name: "Vercel",
       level: t("skills.intermediate"),
+      icon: "bx-rocket",
       details: t("skills.it.details.vercel"),
     },
     {
       name: "Cloud Platforms",
       level: t("skills.intermediate"),
+      icon: "bx-cloud",
       details: t("skills.it.details.cloudplatforms"),
     },
     {
       name: "Automation / Scripting",
       level: t("skills.intermediate"),
+      icon: "bx-code-alt",
       details: t("skills.it.details.automation"),
     },
   ];
@@ -35,12 +40,11 @@ const ITTools = () => {
   return (
     <div className="skills__content">
       <h3 className="skills__title">{t("skills.it.sections.tools")}</h3>
-
       <div className="skills__box">
         <div className="skills__group">
           {items.map((skill) => (
             <div className="skills__data" key={skill.name}>
-              <i className="bx bx-badge-check" />
+              <i className={`bx ${skill.icon}`} />
               <div>
                 <h3 className="skills__name">{skill.name}</h3>
                 <span className="skills__level">{skill.level}</span>

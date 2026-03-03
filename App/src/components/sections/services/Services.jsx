@@ -8,11 +8,10 @@ const Services = () => {
   const [toggleState, setToggleState] = useState(0);
   const toggleTab = (index) => setToggleState(index);
 
-  // 1) IT Services (nuevo bloque)
   const itServices = [
     {
       modalIndex: 1,
-      icon: "uil uil-setting",
+      icon: "uil uil-desktop", // IT Ops → escritorio/sistema
       title1Key: "services.itops.title1",
       title2Key: "services.itops.title2",
       modalTitleKey: "services.itops.title",
@@ -26,7 +25,7 @@ const Services = () => {
     },
     {
       modalIndex: 2,
-      icon: "uil uil-wifi",
+      icon: "uil uil-network-chart", // Networking → red
       title1Key: "services.networking.title1",
       title2Key: "services.networking.title2",
       modalTitleKey: "services.networking.title",
@@ -40,7 +39,7 @@ const Services = () => {
     },
     {
       modalIndex: 3,
-      icon: "uil uil-cloud",
+      icon: "uil uil-cloud-computing", // Deployment → cloud computing
       title1Key: "services.deployment.title1",
       title2Key: "services.deployment.title2",
       modalTitleKey: "services.deployment.title",
@@ -54,13 +53,10 @@ const Services = () => {
     },
   ];
 
-  // 2) Development Services (tus servicios actuales)
-  // Para no romper nada: los dejo con las mismas keys que ya tenías.
-  // Reasigno índices de modal a partir de 4 para que no colisionen con IT.
   const devServices = [
     {
       modalIndex: 4,
-      icon: "uil uil-web-grid",
+      icon: "uil uil-layer-group", // Frontend → capas UI
       title1Key: "services.frontend.title1",
       title2Key: "services.frontend.title2",
       modalTitleKey: "services.frontend.title",
@@ -74,7 +70,7 @@ const Services = () => {
     },
     {
       modalIndex: 5,
-      icon: "uil uil-arrow",
+      icon: "uil uil-server", // Backend → servidor
       title1Key: "services.backend.title1",
       title2Key: "services.backend.title2",
       modalTitleKey: "services.backend.title",
@@ -88,7 +84,7 @@ const Services = () => {
     },
     {
       modalIndex: 6,
-      icon: "uil uil-edit",
+      icon: "uil uil-database", // Database → base de datos
       title1Key: "services.database.title1",
       title2Key: "services.database.title2",
       modalTitleKey: "services.database.title",
@@ -102,7 +98,7 @@ const Services = () => {
     },
     {
       modalIndex: 7,
-      icon: "uil uil-database-alt",
+      icon: "uil uil-table", // FileMaker → tabla/registros
       title1Key: "services.filemaker.title1",
       title2Key: "services.filemaker.title2",
       modalTitleKey: "services.filemaker.title",
@@ -148,7 +144,6 @@ const Services = () => {
             className="uil uil-times services__modal-close"
           />
           <h3 className="services__modal-title">{t(service.modalTitleKey)}</h3>
-
           <ul className="services__modal-services grid">
             {service.tasks.map((taskKey) => (
               <li className="services__modal-service" key={taskKey}>
@@ -170,7 +165,6 @@ const Services = () => {
       </span>
 
       <div className="services__container container grid">
-        {/* ===== IT SERVICES ===== */}
         <div className="services__group">
           <h3 className="services__group-title">{t("services.group.it")}</h3>
           <div className="services__group-grid">
@@ -180,7 +174,6 @@ const Services = () => {
           </div>
         </div>
 
-        {/* ===== DEVELOPMENT SERVICES ===== */}
         <div className="services__group">
           <h3 className="services__group-title">
             {t("services.group.development")}

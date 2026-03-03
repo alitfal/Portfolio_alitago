@@ -5,7 +5,6 @@
   justify-content: center;
 }
 
-/* Separación por ámbitos (Programación / IT) */
 .skills__category {
   margin-bottom: 3rem;
 }
@@ -48,25 +47,26 @@
 
 .skills__data {
   display: grid;
-  grid-template-columns: 18px 1fr; /* icono fijo + texto */
+  grid-template-columns: 24px 1fr; /* ← aumentado de 18px a 24px para el icono más grande */
   column-gap: 0.75rem;
   align-items: start;
-  /* clave: mismo alto para todos */
   height: 100%;
   padding: 0.75rem 0.75rem;
   border-radius: 0.75rem;
 }
+
 .skills__data > div {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.skills .bx-badge-check {
-  font-size: 1rem;
+/* Todos los iconos de skills */
+.skills__data i {
+  font-size: 1.5rem; /* ← antes era 1rem, auméntalo a tu gusto */
   color: var(--title-color);
   line-height: 1;
-  margin-top: 2px; /* alineación óptica */
+  margin-top: 2px;
 }
 
 .skills__name {
@@ -84,20 +84,15 @@
   font-size: 0.9rem;
   line-height: 1.35;
   opacity: 0.85;
-
-  /* clave: mismo número de líneas = misma altura */
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5; /* prueba 2, 3 o 4 */
+  -webkit-line-clamp: 5;
   line-clamp: 5;
   overflow: hidden;
-
-  /* ayuda a que todos ocupen un alto mínimo similar */
   min-height: calc(0.9rem * 1.35 * 3);
 }
 
 /* BREAKPOINTS */
-/* For large devices */
 @media screen and (max-width: 992px) {
   .skills__container {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -109,14 +104,12 @@
   }
 }
 
-/* For medium devices */
 @media screen and (max-width: 768px) {
   .skills__container {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 }
 
-/* For small devices */
 @media screen and (max-width: 576px) {
   .skills__container {
     grid-template-columns: 1fr;
@@ -132,7 +125,6 @@
   }
 }
 
-/* For tiny devices */
 @media screen and (max-width: 350px) {
   .skills__box {
     column-gap: 1.25rem;

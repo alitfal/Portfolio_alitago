@@ -4,7 +4,6 @@ import Frontend from "./Frontend.jsx";
 import Backend from "./Backend.jsx";
 import ITSystems from "./ITSystems.jsx";
 import ITTools from "./ITTools.jsx";
-import IT from "./ITSystems.jsx";
 
 import { useTranslation } from "@/components/context/translation/Translation.jsx";
 
