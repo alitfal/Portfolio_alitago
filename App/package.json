@@ -11,7 +11,7 @@
     "lint": "eslint ."
   },
   "engines": {
-    "node": ">=22.14.0"
+    "node": "22.x"
   },
   "repository": {
     "type": "git",
@@ -66,10 +66,10 @@
   "homepage": "https://github.com/alitfal/Portfolio_alitago#readme",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
-    "next": "^15.5.9",
+    "next": "^15.5.18",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "swiper": "^11.0.7"
+    "swiper": "^12.2.0"
   },
   "devDependencies": {
     "eslint": "^9.0.0",
