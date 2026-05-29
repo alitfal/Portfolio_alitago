@@ -20,12 +20,15 @@ const Utilities = () => {
         className="home__utilities-icon tooltip"
         target="_blank"
         rel="noreferrer"
+        aria-label="LinkedIn"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           width="1.25rem"
           height="1.25rem"
+          aria-hidden="true"
+          focusable="false"
         >
           <path
             fill="currentColor"
@@ -39,12 +42,15 @@ const Utilities = () => {
         className="home__utilities-icon tooltip"
         target="_blank"
         rel="noreferrer"
+        aria-label="GitHub"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           width="1.25rem"
           height="1.25rem"
+          aria-hidden="true"
+          focusable="false"
         >
           <path
             fill="currentColor"
@@ -53,7 +59,13 @@ const Utilities = () => {
         </svg>
         <span className="tooltiptext">GitHub</span>
       </a>
-      <button className="home__theme-icon tooltip" onClick={handleToggleTheme}>
+      <button
+        type="button"
+        className="home__theme-icon tooltip"
+        onClick={handleToggleTheme}
+        aria-label={theme === "light" ? t("home.dark") : t("home.light")}
+        aria-pressed={theme !== "light"}
+      >
         {theme === "light" ? (
           <svg
             className="home__utilities-icon"
@@ -61,6 +73,8 @@ const Utilities = () => {
             viewBox="0 0 24 24"
             width="1.25rem"
             height="1.25rem"
+            aria-hidden="true"
+            focusable="false"
           >
             <path
               fill="currentColor"
@@ -74,6 +88,8 @@ const Utilities = () => {
             viewBox="0 0 24 24"
             width="1.25rem"
             height="1.25rem"
+            aria-hidden="true"
+            focusable="false"
           >
             <path
               fill="currentColor"
@@ -86,14 +102,18 @@ const Utilities = () => {
         </span>
       </button>
       <button
+        type="button"
         className="home__language-icon tooltip"
         onClick={handleToggleLanguage}
+        aria-label={t("home.translate")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           width="1.25rem"
           height="1.25rem"
+          aria-hidden="true"
+          focusable="false"
         >
           <path
             fill="currentColor"

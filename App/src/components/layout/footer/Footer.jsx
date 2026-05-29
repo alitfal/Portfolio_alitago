@@ -33,16 +33,18 @@ const Footer = () => {
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
           >
-            <i className="bx bxl-linkedin" />
+            <i className="bx bxl-linkedin" aria-hidden="true" />
           </a>
           <a
             href="https://github.com/alitfal"
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
           >
-            <i className="bx bxl-github" />
+            <i className="bx bxl-github" aria-hidden="true" />
           </a>
           {/* <a href='https://hub.docker.com/u/alitago' className='footer__social-link' target='_blank' rel='noreferrer'><i className='bx bxl-docker' /></a> */}
           <a
@@ -50,8 +52,9 @@ const Footer = () => {
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"
+            aria-label="PayPal"
           >
-            <i className="bx bxl-paypal" />
+            <i className="bx bxl-paypal" aria-hidden="true" />
           </a>
         </div>
         <span className="footer__copy">
