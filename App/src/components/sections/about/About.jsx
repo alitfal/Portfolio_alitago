@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "@/styles/about.css";
 import Info from "@/components/sections/about/Info.jsx";
 import { useTranslation } from "@/components/context/translation/Translation.jsx";
@@ -11,7 +12,14 @@ const About = () => {
       <h2 className="section__title">{t("about.section.title")}</h2>
       <span className="section__subtitle">{t("about.section.subtitle")}</span>
       <div className="about__container container grid">
-        <img src="/images/about.png" alt="About me" className="about__img" />
+        <Image
+          src="/images/about-optimized.jpg"
+          alt="About me"
+          className="about__img"
+          width={350}
+          height={525}
+          sizes="(max-width: 992px) 220px, 350px"
+        />
         <div className="about__data">
           <Info />
           <p className="about__description">{t("about.description")}</p>
