@@ -40,10 +40,10 @@ export const metadata = {
     siteName: "Angel Luis Litago Falces Portfolio",
     images: [
       {
-        url: "/images/home.jpg",
-        width: 512,
-        height: 512,
-        alt: "Angel Luis Litago Falces portfolio portrait",
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional developer workstation for Angel Luis Litago Falces portfolio",
       },
     ],
     locale: "en_US",
@@ -53,7 +53,7 @@ export const metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/images/home.jpg"],
+    images: ["/images/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
