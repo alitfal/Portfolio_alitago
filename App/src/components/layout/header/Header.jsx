@@ -29,8 +29,11 @@ const Header = () => {
   return (
     <header className={`header ${headerClass}`}>
       <nav className="nav container">
-        <a href="/" className="nav__logo"></a>
-        <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
+        <a href="/" className="nav__logo" aria-label="Angel Litago"></a>
+        <div
+          id="nav-menu"
+          className={Toggle ? "nav__menu show-menu" : "nav__menu"}
+        >
           <ul className="nav__list grid">
             <li className="nav__item">
               <a
@@ -40,7 +43,8 @@ const Header = () => {
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-estate nav__icon" /> {t("header.home")}
+                <i className="uil uil-estate nav__icon" aria-hidden="true" />{" "}
+                {t("header.home")}
               </a>
             </li>
             <li className="nav__item">
@@ -51,7 +55,8 @@ const Header = () => {
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-user nav__icon" /> {t("header.about")}
+                <i className="uil uil-user nav__icon" aria-hidden="true" />{" "}
+                {t("header.about")}
               </a>
             </li>
             <li className="nav__item">
@@ -64,7 +69,10 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-file-alt nav__icon" />{" "}
+                <i
+                  className="uil uil-file-alt nav__icon"
+                  aria-hidden="true"
+                />{" "}
                 {t("header.qualification")}
               </a>
             </li>
@@ -78,7 +86,10 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-file-alt nav__icon" />{" "}
+                <i
+                  className="uil uil-file-alt nav__icon"
+                  aria-hidden="true"
+                />{" "}
                 {t("header.skills")}
               </a>
             </li>
@@ -92,7 +103,10 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-briefcase-alt nav__icon" />{" "}
+                <i
+                  className="uil uil-briefcase-alt nav__icon"
+                  aria-hidden="true"
+                />{" "}
                 {t("header.services")}
               </a>
             </li>
@@ -106,7 +120,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-scenery nav__icon" />{" "}
+                <i className="uil uil-scenery nav__icon" aria-hidden="true" />{" "}
                 {t("header.projects")}
               </a>
             </li>
@@ -120,7 +134,10 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-comment-dots nav__icon" />{" "}
+                <i
+                  className="uil uil-comment-dots nav__icon"
+                  aria-hidden="true"
+                />{" "}
                 {t("header.testimonials")}
               </a>
             </li>
@@ -134,19 +151,29 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-message nav__icon" />{" "}
+                <i className="uil uil-message nav__icon" aria-hidden="true" />{" "}
                 {t("header.contact")}
               </a>
             </li>
           </ul>
-          <i
+          <button
+            type="button"
             className="uil uil-times nav__close"
+            aria-label="Close navigation menu"
+            aria-controls="nav-menu"
+            aria-expanded={Toggle}
             onClick={() => showMenu(!Toggle)}
+            style={{ backgroundColor: "transparent", padding: 0 }}
           />
         </div>
-        <i
+        <button
+          type="button"
           className="uil uil-apps nav__toggle"
+          aria-label="Open navigation menu"
+          aria-controls="nav-menu"
+          aria-expanded={Toggle}
           onClick={() => showMenu(!Toggle)}
+          style={{ backgroundColor: "transparent", padding: 0 }}
         />
       </nav>
     </header>

@@ -239,6 +239,14 @@ button {
   outline: none;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
 /* ===== REUSABLE CLASSES ===== */
 .section {
   padding: 6rem 0 2rem;
