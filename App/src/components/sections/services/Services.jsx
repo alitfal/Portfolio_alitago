@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "@/styles/services.css";
 import { useTranslation } from "@/components/context/translation/Translation.jsx";
 
@@ -6,7 +6,57 @@ const Services = () => {
   const { t } = useTranslation();
 
   const [toggleState, setToggleState] = useState(0);
-  const toggleTab = (index) => setToggleState(index);
+  const closeButtonRefs = useRef({});
+  const lastFocusedElement = useRef(null);
+  const lastOpenedModalIndex = useRef(null);
+  const shouldRestoreFocus = useRef(false);
+
+  const openModal = (index, event) => {
+    lastFocusedElement.current = event.currentTarget;
+    lastOpenedModalIndex.current = index;
+    setToggleState(index);
+  };
+
+  const closeModal = () => {
+    shouldRestoreFocus.current = true;
+    setToggleState(0);
+  };
+
+  useEffect(() => {
+    if (toggleState === 0) {
+      if (shouldRestoreFocus.current) {
+        shouldRestoreFocus.current = false;
+        requestAnimationFrame(() => {
+          const trigger = document.querySelector(
+            `[aria-controls="service-modal-${lastOpenedModalIndex.current}"]`,
+          );
+
+          if (trigger instanceof HTMLElement) {
+            trigger.focus();
+          } else {
+            lastFocusedElement.current?.focus();
+          }
+        });
+      }
+
+      return undefined;
+    }
+
+    closeButtonRefs.current[toggleState]?.focus();
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeModal();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [toggleState]);
 
   const itServices = [
     {
@@ -115,7 +165,7 @@ const Services = () => {
   const ServiceCard = ({ service }) => (
     <div className="services__content">
       <div>
-        <i className={`${service.icon} services__icon`} />
+        <i className={`${service.icon} services__icon`} aria-hidden="true" />
         <h3 className="services__title">
           {t(service.title1Key)}
           <br />
@@ -123,15 +173,27 @@ const Services = () => {
         </h3>
       </div>
 
-      <span
+      <button
+        type="button"
         className="services__button"
-        onClick={() => toggleTab(service.modalIndex)}
+        onClick={(event) => openModal(service.modalIndex, event)}
+        aria-haspopup="dialog"
+        aria-expanded={toggleState === service.modalIndex}
+        aria-controls={`service-modal-${service.modalIndex}`}
       >
         {t("services.viewmore")}
-        <i className="uil uil-arrow-right services__button-icon" />
-      </span>
+        <i
+          className="uil uil-arrow-right services__button-icon"
+          aria-hidden="true"
+        />
+      </button>
 
       <div
+        id={`service-modal-${service.modalIndex}`}
+        role={toggleState === service.modalIndex ? "dialog" : undefined}
+        aria-modal={toggleState === service.modalIndex ? "true" : undefined}
+        aria-labelledby={`service-modal-title-${service.modalIndex}`}
+        aria-hidden={toggleState !== service.modalIndex}
         className={
           toggleState === service.modalIndex
             ? "services__modal active-modal"
@@ -139,15 +201,28 @@ const Services = () => {
         }
       >
         <div className="services__modal-content">
-          <i
-            onClick={() => toggleTab(0)}
+          <button
+            type="button"
+            onClick={closeModal}
             className="uil uil-times services__modal-close"
+            aria-label="Close service details"
+            ref={(element) => {
+              closeButtonRefs.current[service.modalIndex] = element;
+            }}
           />
-          <h3 className="services__modal-title">{t(service.modalTitleKey)}</h3>
+          <h3
+            className="services__modal-title"
+            id={`service-modal-title-${service.modalIndex}`}
+          >
+            {t(service.modalTitleKey)}
+          </h3>
           <ul className="services__modal-services grid">
             {service.tasks.map((taskKey) => (
               <li className="services__modal-service" key={taskKey}>
-                <i className="uil uil-check-circle services__modal-icon" />
+                <i
+                  className="uil uil-check-circle services__modal-icon"
+                  aria-hidden="true"
+                />
                 <p className="services__modal-info">{t(taskKey)}</p>
               </li>
             ))}

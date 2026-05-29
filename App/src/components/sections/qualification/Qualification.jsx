@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "@/styles/qualification.css";
 import { useTranslation } from "@/components/context/translation/Translation.jsx";
 
@@ -6,7 +6,40 @@ const Qualification = () => {
   const { t } = useTranslation();
 
   const [toggleState, setToggleState] = useState(1);
+  const tabRefs = useRef([]);
   const toggleTab = (index) => setToggleState(index);
+  const tabs = [
+    {
+      index: 1,
+      icon: "uil uil-graduation-cap qualification__icon",
+      label: t("qualification.education.header"),
+      controls: "qualification-education-panel",
+      id: "qualification-education-tab",
+    },
+    {
+      index: 2,
+      icon: "uil uil-briefcase-alt qualification__icon",
+      label: t("qualification.experience.header"),
+      controls: "qualification-experience-panel",
+      id: "qualification-experience-tab",
+    },
+  ];
+
+  const handleTabKeyDown = (event, tabIndex) => {
+    const keyActions = {
+      ArrowLeft: tabIndex === 0 ? tabs.length - 1 : tabIndex - 1,
+      ArrowRight: tabIndex === tabs.length - 1 ? 0 : tabIndex + 1,
+      Home: 0,
+      End: tabs.length - 1,
+    };
+
+    if (!(event.key in keyActions)) return;
+
+    event.preventDefault();
+    const nextTabIndex = keyActions[event.key];
+    toggleTab(tabs[nextTabIndex].index);
+    tabRefs.current[nextTabIndex]?.focus();
+  };
 
   return (
     <section className="qualification section" id="qualification">
@@ -15,32 +48,37 @@ const Qualification = () => {
         {t("qualification.section.subtitle")}
       </span>
       <div className="qualification__container container">
-        <div className="qualification__tabs">
-          <div
-            className={
-              toggleState === 1
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
-            }
-            onClick={() => toggleTab(1)}
-          >
-            <i className="uil uil-graduation-cap qualification__icon" />
-            {t("qualification.education.header")}
-          </div>
-          <div
-            className={
-              toggleState === 2
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
-            }
-            onClick={() => toggleTab(2)}
-          >
-            <i className="uil uil-briefcase-alt qualification__icon" />
-            {t("qualification.experience.header")}
-          </div>
+        <div className="qualification__tabs" role="tablist">
+          {tabs.map((tab, tabIndex) => (
+            <button
+              type="button"
+              className={
+                toggleState === tab.index
+                  ? "qualification__button qualification__active button--flex"
+                  : "qualification__button button--flex"
+              }
+              onClick={() => toggleTab(tab.index)}
+              onKeyDown={(event) => handleTabKeyDown(event, tabIndex)}
+              role="tab"
+              aria-selected={toggleState === tab.index}
+              aria-controls={tab.controls}
+              id={tab.id}
+              ref={(element) => {
+                tabRefs.current[tabIndex] = element;
+              }}
+              key={tab.id}
+            >
+              <i className={tab.icon} aria-hidden="true" />
+              {tab.label}
+            </button>
+          ))}
         </div>
         <div className="qualification__sections">
           <div
+            id="qualification-education-panel"
+            role="tabpanel"
+            aria-labelledby="qualification-education-tab"
+            hidden={toggleState !== 1}
             className={
               toggleState === 1
                 ? "qualification__content qualification__content-active"
@@ -73,17 +111,18 @@ const Qualification = () => {
                   </span>
                 </a>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt" /> Oct 2022 - Jun 2026
+                  <i className="uil uil-calendar-alt" aria-hidden="true" />{" "}
+                  Oct 2022 - Jun 2026
                 </div>
               </div>
-              <div>
+              <div aria-hidden="true">
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
             </div>
             <div className="qualification__data">
               <div></div>
-              <div>
+              <div aria-hidden="true">
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
@@ -102,7 +141,8 @@ const Qualification = () => {
                   </span>
                 </a>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt" /> Oct 2006 - Jun 2007
+                  <i className="uil uil-calendar-alt" aria-hidden="true" />{" "}
+                  Oct 2006 - Jun 2007
                 </div>
               </div>
             </div>
@@ -122,15 +162,20 @@ const Qualification = () => {
                   </span>
                 </a>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt" /> Oct 2004 - Jun 2006
+                  <i className="uil uil-calendar-alt" aria-hidden="true" />{" "}
+                  Oct 2004 - Jun 2006
                 </div>
               </div>
-              <div>
+              <div aria-hidden="true">
                 <span className="qualification__rounder"></span>
               </div>
             </div>
           </div>
           <div
+            id="qualification-experience-panel"
+            role="tabpanel"
+            aria-labelledby="qualification-experience-tab"
+            hidden={toggleState !== 2}
             className={
               toggleState === 2
                 ? "qualification__content qualification__content-active"
@@ -139,7 +184,7 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div></div>
-              <div>
+              <div aria-hidden="true">
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
@@ -158,7 +203,8 @@ const Qualification = () => {
                   </span>
                 </a>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt" /> May 2003 -{" "}
+                  <i className="uil uil-calendar-alt" aria-hidden="true" />{" "}
+                  May 2003 -{" "}
                   {t("qualification.present")}
                 </div>
               </div>

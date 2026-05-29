@@ -30,8 +30,8 @@ const Work = () => {
     }
   }, [item, t]);
 
-  const handleClick = (e, index) => {
-    setItem({ name: e.target.textContent.toLowerCase() });
+  const handleClick = (name, index) => {
+    setItem({ name });
     setActive(index);
   };
 
@@ -45,16 +45,19 @@ const Work = () => {
         {/* projectsNav */}
         <div className="work__filters">
           {projectsNav.map((item, index) => {
+            const translatedName = t(`projects.data.${item.name}`);
             return (
-              <span
-                onClick={(e) => {
-                  handleClick(e, index);
+              <button
+                type="button"
+                onClick={() => {
+                  handleClick(translatedName.toLowerCase(), index);
                 }}
                 className={`${active === index ? "active-work" : ""} work__item`}
+                aria-pressed={active === index}
                 key={index}
               >
-                {t(`projects.data.${item.name}`)}
-              </span>
+                {translatedName}
+              </button>
             );
           })}
         </div>
@@ -63,7 +66,12 @@ const Work = () => {
           {projects.map((item) => {
             return (
               <div className="work__card" key={item.id}>
-                <a href={item.link} target="_blank" rel="noreferrer">
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={item.title}
+                >
                   <img
                     className="work__img"
                     src={theme === "light" ? item.imageLight : item.imageDark}
@@ -78,7 +86,10 @@ const Work = () => {
                   rel="noreferrer"
                 >
                   {t("projects.repository")}
-                  <i className="bx bx-right-arrow-alt work__button-icon" />
+                  <i
+                    className="bx bx-right-arrow-alt work__button-icon"
+                    aria-hidden="true"
+                  />
                 </a>
               </div>
             );
