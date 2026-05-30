@@ -51,6 +51,8 @@
 }
 
 .services__button {
+  background: transparent;
+  padding: 0;
   color: var(--title-color);
   font-size: var(--small-font-size);
   display: inline-flex;
@@ -85,6 +87,12 @@
   transform: translateX(0.25rem);
 }
 
+.services__button:focus-visible,
+.services__modal-close:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
 /* ===== MODAL ===== */
 .services__modal {
   position: fixed;
@@ -116,6 +124,8 @@
 }
 
 .services__modal-close {
+  background: transparent;
+  padding: 0;
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
