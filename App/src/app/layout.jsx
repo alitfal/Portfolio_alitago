@@ -1,33 +1,69 @@
+const siteUrl = "https://portfolio-alitago.vercel.app";
+const siteTitle = "Angel Luis Litago Falces - Full-Stack Developer Portfolio";
+const siteDescription =
+  "Portfolio of Angel Luis Litago Falces, a full-stack web developer, Claris FileMaker developer, and IT support specialist based in the Canary Islands.";
+
 export const metadata = {
-  title: "Angel Luis Litago Falces - Portfolio",
-  author: "Angel Luis Litago Falces",
-  description:
-    "Full-Stack web application developer and Claris FileMaker Developer, rider and diver.",
-  keywords:
-    "alitago, website, portfolio, cv, curriculum, vitae, linkedin, github, docker, dockerhub, node, nodejs, npm, npmjs, filemaker, git, html, css, javascript, typescript, react, next, nextjs, vercel, about, contact, home, projects, qualification, services, skills, testimonials, translation, english, spanish, japanese, light, theme, dark, mode",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: "%s | Angel Luis Litago Falces",
+  },
+  description: siteDescription,
+  authors: [{ name: "Angel Luis Litago Falces", url: siteUrl }],
+  creator: "Angel Luis Litago Falces",
+  keywords: [
+    "Angel Luis Litago Falces",
+    "Angel Litago",
+    "alitago",
+    "portfolio",
+    "full-stack developer",
+    "web developer",
+    "Claris FileMaker developer",
+    "FileMaker",
+    "IT support",
+    "React",
+    "Next.js",
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "Vercel",
+    "Canary Islands",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: "/",
+    siteName: "Angel Luis Litago Falces Portfolio",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional developer workstation for Angel Luis Litago Falces portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/images/og-image.jpg"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content={metadata.author} />
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        <meta
-          property="og:image"
-          content="https://avatars.githubusercontent.com/u/17743628?s=400&u=e64e7cc9111abc5e2cc6e9c6e9ace7afe1ca92c6&v=4"
-        />
-        <meta
-          property="og:url"
-          content="https://portfolio-alitago.vercel.app/"
-        />
-        <title>{metadata.title}</title>
-        <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "@/styles/testimonial.css";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -41,10 +42,12 @@ const Testimonials = () => {
         {customersData.map(({ id, imageLight, imageDark }) => {
           return (
             <SwiperSlide className="testimonial__card" key={id}>
-              <img
+              <Image
                 className="testimonial__img"
                 src={theme === "light" ? imageLight : imageDark}
                 alt=""
+                width={60}
+                height={60}
               />
               <h3 className="testimonial__name">
                 {t(`testimonials.${id}.name`)}

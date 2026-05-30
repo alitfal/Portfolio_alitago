@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import "@/styles/projects.css";
 import { projectsNav, projectsData } from "./Data.jsx";
 import { useTheme } from "@/components/context/theme/Theme.jsx";
@@ -72,10 +73,13 @@ const Work = () => {
                   rel="noreferrer"
                   aria-label={item.title}
                 >
-                  <img
+                  <Image
                     className="work__img"
                     src={theme === "light" ? item.imageLight : item.imageDark}
                     alt=""
+                    width={295}
+                    height={295}
+                    sizes="(max-width: 576px) calc(100vw - 5rem), 295px"
                   />
                 </a>
                 <h3 className="work__title">{item.title}</h3>
