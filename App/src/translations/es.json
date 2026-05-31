@@ -6,7 +6,7 @@
     "skills": "Habilidades",
     "services": "Servicios",
     "projects": "Proyectos",
-    "testimonials": "Reseñas",
+    "testimonials": "Qué aporto",
     "contact": "Contacto"
   },
   "home": {
@@ -15,7 +15,7 @@
     "translate": "Traducir",
     "subtitle": "Especialista IT & Desarrollador FileMaker y Web",
     "description": "Profesional IT especializado en desarrollo de soluciones con Claris FileMaker y aplicaciones web Full-Stack, basado en las Islas Canarias.",
-    "button": "Saludar",
+    "button": "Hablemos de tu proyecto",
     "scroll": "Bajar"
   },
   "about": {
@@ -23,7 +23,8 @@
       "title": "Sobre mí",
       "subtitle": ""
     },
-    "description": "Con más de 12 años de experiencia en IT y desarrollo Full-Stack, he trabajado en proyectos que van desde la administración de infraestructuras y redes hasta la construcción de aplicaciones web completas. A lo largo de más de 15 proyectos, he integrado frontend y backend en soluciones sólidas, escalables y orientadas al rendimiento. Mi enfoque abarca todo el ciclo: análisis, desarrollo, despliegue y soporte online continuado, asegurando que cada solución no solo funcione, sino que perdure.",
+    "description": "Soy Angel Luis Litago Falces, desarrollador web / full-stack con experiencia en FileMaker, soporte IT y automatización de procesos. Trabajo creando herramientas internas, integraciones y aplicaciones que ayudan a organizar datos, reducir tareas manuales y mejorar flujos de trabajo reales. Combino desarrollo web con conocimiento de sistemas, bases de datos y entornos operativos para construir soluciones útiles, mantenibles y orientadas al uso diario.",
+    "confidentiality": "Algunos trabajos y herramientas internas no se muestran públicamente por confidencialidad y protección de datos de clientes.",
     "button": "Currículum Vitae",
     "info": {
       "experience": {
@@ -116,35 +117,35 @@
     "frontend": {
       "title": "Desarrollo Front-End",
       "title1": "Front-End",
-      "title2": "Development",
-      "description": "Deseo ofrecer un trabajo de calidad a clientes y empresas.",
-      "task1": "Construcción de aplicaciones web completas desde el concepto hasta el despliegue.",
-      "task2": "Creación de interfaces de usuario intuitivas para una experiencia óptima.",
-      "task3": "Diseño de interacciones atractivas para mejorar la satisfacción del usuario.",
-      "task4": "Incorporación de la identidad de marca de tu empresa en la aplicación.",
-      "task5": "Diseño de representaciones visuales para ilustrar la funcionalidad de la aplicación."
+      "title2": "Desarrollo",
+      "description": "Desarrollo de interfaces web claras y mantenibles.",
+      "task1": "Construcción de interfaces web con React, Next.js, JavaScript y CSS.",
+      "task2": "Creación de componentes reutilizables orientados a claridad y mantenimiento.",
+      "task3": "Integración con APIs y datos procedentes de herramientas internas.",
+      "task4": "Adaptación de interfaces a flujos de trabajo reales.",
+      "task5": "Despliegue y mantenimiento de aplicaciones web en Vercel u otros entornos."
     },
     "backend": {
       "title": "Desarrollo Back-End",
       "title1": "Back-End",
-      "title2": "Development",
-      "description": "Deseo ofrecer un trabajo de calidad a clientes y empresas.",
-      "task1": "Construcción del motor que impulsa tu aplicación web.",
-      "task2": "Desarrollo de sistemas backend robustos para el procesamiento de datos y la lógica de negocio.",
-      "task3": "Ajuste y optimización de sistemas backend para velocidad y eficiencia.",
-      "task4": "Optimización para escalabilidad y rendimiento, garantizando un funcionamiento fluido con alta carga.",
-      "task5": "Implementación de mecanismos para gestionar y resolver incidencias, asegurando la fiabilidad del sistema."
+      "title2": "Desarrollo",
+      "description": "Desarrollo de lógica, datos e integraciones para herramientas internas.",
+      "task1": "Diseño de endpoints y procesos para conectar aplicaciones con datos.",
+      "task2": "Trabajo con SQL y estructuras de datos orientadas a flujos operativos.",
+      "task3": "Integración de servicios, automatizaciones y APIs locales.",
+      "task4": "Mantenimiento y mejora de funcionalidades existentes.",
+      "task5": "Diagnóstico de errores y soporte técnico durante el ciclo de vida."
     },
     "database": {
       "title": "Desarrollo de Bases de Datos",
-      "title1": "Database",
-      "title2": "Development",
-      "description": "Deseo ofrecer un trabajo de calidad a clientes y empresas.",
-      "task1": "Diseño de modelos de datos que representen con precisión los requisitos y relaciones de la aplicación.",
-      "task2": "Creación de esquemas de base de datos estructurados y eficientes para organizar los datos.",
-      "task3": "Implementación de técnicas de indexación para mejorar el rendimiento de las consultas.",
-      "task4": "Análisis y optimización de consultas para mejorar el rendimiento global del sistema.",
-      "task5": "Establecimiento de procedimientos de backup y recuperación robustos para asegurar la integridad y continuidad."
+      "title1": "Bases de",
+      "title2": "Datos",
+      "description": "Organización y explotación de datos para uso operativo.",
+      "task1": "Diseño de estructuras de datos para herramientas internas.",
+      "task2": "Creación y mantenimiento de consultas SQL.",
+      "task3": "Preparación de datos para informes, tablas y visualizaciones.",
+      "task4": "Revisión de procesos para reducir duplicidades y errores.",
+      "task5": "Soporte en migraciones, limpieza y consolidación de información."
     },
     "filemaker": {
       "title1": "Soluciones",
@@ -175,8 +176,7 @@
     "experience": {
       "header": "Experiencia",
       "title": {
-        "job_1": "Desarrollador Freelance y Especialista IT",
-        "job_2": "Puesto de trabajo 2"
+        "job_1": "Desarrollador Freelance y Especialista IT"
       }
     },
     "present": "Actual"
@@ -184,44 +184,63 @@
   "projects": {
     "section": {
       "title": "Proyectos",
-      "subtitle": "Trabajos recientes"
+      "subtitle": "Soluciones reales, herramientas internas y proyectos técnicos"
     },
+    "confidentiality": "Algunos trabajos y herramientas internas no se muestran públicamente por confidencialidad y protección de datos de clientes.",
     "data": {
       "all": "Todos",
-      "app": "App",
-      "collaboration": "Contribución",
-      "package": "Paquete"
+      "public": "Públicos",
+      "private": "Privados"
     },
-    "repository": "Repositorio"
+    "repository": "Ver repositorio",
+    "private": "Proyecto privado",
+    "items": {
+      "inytelPresence": {
+        "description": "Aplicación web para control de presencia y registro de jornada laboral, con panel de empleado, administración, autenticación, estadísticas y despliegue en Railway."
+      },
+      "filemakerVscode": {
+        "description": "Extensión de VS Code para desarrollo FileMaker/Claris Pro, con resaltado de sintaxis, snippets, documentación hover y herramientas para cálculos y scripts."
+      },
+      "filemakerCharts": {
+        "description": "Interfaz web para explorar layouts y datos desde FileMaker Server usando FileMaker Data API, con tablas avanzadas, exportación y modo oscuro."
+      },
+      "filemakerWhisper": {
+        "description": "Caso de uso privado en FileMaker que conecta con un modelo Whisper ejecutado localmente para transcribir voz a texto."
+      },
+      "internalTools": {
+        "title": "Herramientas internas para clientes",
+        "description": "Desarrollo y mantenimiento de soluciones internas para clientes, incluyendo automatización de procesos, gestión de datos, soporte IT y mejoras operativas. No se muestran públicamente por protección de datos y confidencialidad."
+      }
+    }
   },
   "testimonials": {
     "section": {
-      "title": "Reseñas",
-      "subtitle": "Los clientes opinan"
+      "title": "Qué aporto",
+      "subtitle": "Una forma práctica de construir soluciones"
     },
     "1": {
-      "name": "Laura Martínez",
-      "quote": "\"Trabajar con este desarrollador fue un éxito total. Entendió nuestras necesidades rápidamente y entregó un proyecto funcional y atractivo.\""
+      "name": "Herramientas internas útiles",
+      "quote": "Diseño soluciones centradas en reducir trabajo manual, ordenar datos y facilitar operaciones del día a día."
     },
     "2": {
-      "name": "David Gómez",
-      "quote": "\"El proyecto se completó a tiempo y con una calidad excelente. La comunicación fue fluida y profesional en todo momento. ¡Muy recomendable!\""
+      "name": "Puente entre web, FileMaker e IT",
+      "quote": "Combino desarrollo web, FileMaker, bases de datos y soporte técnico para resolver problemas desde una visión completa."
     },
     "3": {
-      "name": "Ana Torres",
-      "quote": "\"Convirtieron nuestras ideas en una herramienta útil y sencilla. Estamos muy satisfechos con el resultado y el soporte recibido tras la entrega.\""
+      "name": "Automatización con criterio",
+      "quote": "Automatizo procesos cuando aportan valor real: menos repetición, menos errores y más trazabilidad."
     },
     "4": {
-      "name": "Jorge Ramírez",
-      "quote": "\"Gran profesional. El trabajo superó nuestras expectativas y nos ayudó a optimizar procesos internos. Sin duda contaremos con él para futuros desarrollos.\""
+      "name": "Mantenimiento y mejora continua",
+      "quote": "Me importa que las soluciones sean mantenibles, documentadas y fáciles de evolucionar con el uso."
     },
     "5": {
-      "name": "Carlos Herrera",
-      "quote": "\"Nos ayudó a reorganizar y optimizar toda nuestra infraestructura IT. Mejoró el rendimiento de los equipos y resolvió problemas de red que arrastrábamos desde hacía meses. Profesional y resolutivo.\""
+      "name": "Confidencialidad profesional",
+      "quote": "Muchos trabajos internos no se publican por protección de datos, pero forman parte de una experiencia real resolviendo necesidades de clientes."
     },
     "6": {
-      "name": "Marta López",
-      "quote": "\"Su soporte IT ha sido clave para nuestro equipo. Automatizó procesos internos, mejoró la seguridad de nuestros sistemas y redujo significativamente las incidencias técnicas. Totalmente recomendable.\""
+      "name": "Orientación a resultados",
+      "quote": "Trabajo con foco en que cada herramienta sea clara, útil y sostenible para la persona o equipo que la usa."
     }
   },
   "contact": {

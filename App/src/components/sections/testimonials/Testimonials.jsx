@@ -1,17 +1,14 @@
 import React from "react";
-import Image from "next/image";
 import "@/styles/testimonial.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import { customersData } from "./Data.jsx";
-import { useTheme } from "@/components/context/theme/Theme.jsx";
 import { useTranslation } from "@/components/context/translation/Translation.jsx";
 
 const Testimonials = () => {
-  const { theme } = useTheme();
   const { t } = useTranslation();
+  const highlights = [1, 2, 3, 4, 5, 6];
 
   return (
     <section className="testimonial container section" id="testimonials">
@@ -39,16 +36,9 @@ const Testimonials = () => {
           },
         }}
       >
-        {customersData.map(({ id, imageLight, imageDark }) => {
+        {highlights.map((id) => {
           return (
             <SwiperSlide className="testimonial__card" key={id}>
-              <Image
-                className="testimonial__img"
-                src={theme === "light" ? imageLight : imageDark}
-                alt=""
-                width={60}
-                height={60}
-              />
               <h3 className="testimonial__name">
                 {t(`testimonials.${id}.name`)}
               </h3>

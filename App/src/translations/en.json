@@ -6,7 +6,7 @@
     "skills": "Skills",
     "services": "Services",
     "projects": "Projects",
-    "testimonials": "Testimonials",
+    "testimonials": "What I bring",
     "contact": "Contact"
   },
   "home": {
@@ -15,7 +15,7 @@
     "translate": "Translate",
     "subtitle": "IT Specialist & FileMaker / Web Developer",
     "description": "IT professional specialized in Claris FileMaker solutions and Full-Stack web application development, based in the Canary Islands.",
-    "button": "Say Hello",
+    "button": "Let's talk about your project",
     "scroll": "Scroll Down"
   },
   "about": {
@@ -23,7 +23,8 @@
       "title": "About Me",
       "subtitle": ""
     },
-    "description": "With over 12 years of experience in IT and Full-Stack development, I have worked on projects ranging from infrastructure and network administration to building complete web applications. Across more than 15 projects, I have integrated frontend and backend into solid, scalable, performance-driven solutions. My approach covers the full cycle: analysis, development, deployment and ongoing online support, ensuring that every solution not only works, but lasts.",
+    "description": "I'm Angel Luis Litago Falces, a web / full-stack developer with experience in FileMaker, IT support and process automation. I build internal tools, integrations and applications that help organize data, reduce manual work and improve real workflows. I combine web development with systems, databases and operational knowledge to create useful, maintainable solutions for day-to-day work.",
+    "confidentiality": "Some internal tools and client work are not publicly shown due to confidentiality and data protection.",
     "button": "Curriculum Vitae",
     "info": {
       "experience": {
@@ -117,31 +118,31 @@
       "title": "Front-End Development",
       "title1": "Front-End",
       "title2": "Development",
-      "task1": "Building comprehensive web applications from concept to deployment.",
-      "task2": "Crafting intuitive user interfaces for an optimal experience.",
-      "task3": "Creating engaging interactions to optimize user satisfaction.",
-      "task4": "Seamlessly incorporating your company's brand identity into the application.",
-      "task5": "Designing visual representations to illustrate application functionality."
+      "task1": "Building web interfaces with React, Next.js, JavaScript and CSS.",
+      "task2": "Creating reusable components focused on clarity and maintainability.",
+      "task3": "Integrating interfaces with APIs and data from internal tools.",
+      "task4": "Adapting user interfaces to real working processes.",
+      "task5": "Deploying and maintaining web applications on Vercel or similar environments."
     },
     "backend": {
       "title": "Back-End Development",
       "title1": "Back-End",
       "title2": "Development",
-      "task1": "Crafting the engine powering your web application.",
-      "task2": "Building robust backend systems to handle data processing and business logic.",
-      "task3": "Fine-tuning backend systems for speed and efficiency.",
-      "task4": "Optimizing systems for scalability and performance under heavy loads.",
-      "task5": "Implementing mechanisms to manage and resolve issues effectively."
+      "task1": "Designing endpoints and processes to connect applications with data.",
+      "task2": "Working with SQL and data structures for operational workflows.",
+      "task3": "Integrating services, automations and local APIs.",
+      "task4": "Maintaining and improving existing functionality.",
+      "task5": "Diagnosing errors and providing technical support through the lifecycle."
     },
     "database": {
       "title": "Database Development",
       "title1": "Database",
       "title2": "Development",
-      "task1": "Designing accurate and scalable data models.",
-      "task2": "Creating structured and efficient database schemas.",
-      "task3": "Implementing indexing strategies to improve performance.",
-      "task4": "Analyzing and optimizing queries for better efficiency.",
-      "task5": "Establishing robust backup and recovery procedures."
+      "task1": "Designing data structures for internal tools.",
+      "task2": "Creating and maintaining SQL queries.",
+      "task3": "Preparing data for reports, tables and visualizations.",
+      "task4": "Reviewing processes to reduce duplicated work and errors.",
+      "task5": "Supporting migrations, cleanup and consolidation of information."
     },
     "filemaker": {
       "title1": "Solutions",
@@ -171,8 +172,7 @@
     "experience": {
       "header": "Experience",
       "title": {
-        "job_1": "Freelance Developer and IT Specialist",
-        "job_2": "Job Title 2"
+        "job_1": "Freelance Developer and IT Specialist"
       }
     },
     "present": "Present"
@@ -180,44 +180,63 @@
   "projects": {
     "section": {
       "title": "Projects",
-      "subtitle": "Most recent work"
+      "subtitle": "Real solutions, internal tools and technical projects"
     },
+    "confidentiality": "Some internal tools and client work are not publicly shown due to confidentiality and data protection.",
     "data": {
       "all": "All",
-      "app": "App",
-      "collaboration": "Contribution",
-      "package": "Package"
+      "public": "Public",
+      "private": "Private"
     },
-    "repository": "Repository"
+    "repository": "View repository",
+    "private": "Private project",
+    "items": {
+      "inytelPresence": {
+        "description": "Web application for employee attendance and work time tracking, with employee/admin dashboards, authentication, statistics and Railway deployment."
+      },
+      "filemakerVscode": {
+        "description": "VS Code extension for FileMaker/Claris Pro development, with syntax highlighting, snippets, hover documentation and tools for calculations and scripts."
+      },
+      "filemakerCharts": {
+        "description": "Web interface for exploring layouts and data from FileMaker Server using the FileMaker Data API, with advanced tables, export options and dark mode."
+      },
+      "filemakerWhisper": {
+        "description": "Private FileMaker use case that connects to a locally running Whisper model to transcribe speech to text."
+      },
+      "internalTools": {
+        "title": "Internal client tools",
+        "description": "Development and maintenance of internal client solutions, including process automation, data management, IT support and operational improvements. Not publicly shown due to data protection and confidentiality."
+      }
+    }
   },
   "testimonials": {
     "section": {
-      "title": "Testimonials",
-      "subtitle": "My clients say"
+      "title": "What I bring",
+      "subtitle": "A practical way to build useful solutions"
     },
     "1": {
-      "name": "Laura Martínez",
-      "quote": "\"Working with this developer was a complete success. He quickly understood our needs and delivered a functional, attractive project.\""
+      "name": "Useful internal tools",
+      "quote": "I design solutions focused on reducing manual work, organizing data and making day-to-day operations easier."
     },
     "2": {
-      "name": "David Gómez",
-      "quote": "\"The project was completed on time and with excellent quality. Communication was smooth and professional at all times. Highly recommended!\""
+      "name": "Bridge between web, FileMaker and IT",
+      "quote": "I combine web development, FileMaker, databases and technical support to solve problems from a broader operational view."
     },
     "3": {
-      "name": "Ana Torres",
-      "quote": "\"They turned our ideas into a useful, simple tool. We are very satisfied with the result and the support received after delivery.\""
+      "name": "Purposeful automation",
+      "quote": "I automate processes when they create real value: less repetition, fewer errors and clearer traceability."
     },
     "4": {
-      "name": "Jorge Ramírez",
-      "quote": "\"Great professional. The work exceeded our expectations and helped us optimize internal processes. We will definitely count on him for future developments.\""
+      "name": "Maintenance and continuous improvement",
+      "quote": "I care about solutions being maintainable, documented and easy to evolve as real usage grows."
     },
     "5": {
-      "name": "Carlos Herrera",
-      "quote": "\"He helped us reorganize and optimize our entire IT infrastructure. System performance improved significantly, and long-standing network issues were resolved efficiently. Professional and highly solution-oriented.\""
+      "name": "Professional confidentiality",
+      "quote": "Many internal projects cannot be published due to data protection, but they are part of real experience solving client needs."
     },
     "6": {
-      "name": "Marta López",
-      "quote": "\"His IT support has been essential for our team. He automated internal processes, enhanced system security, and significantly reduced technical incidents. Highly recommended.\""
+      "name": "Outcome-focused work",
+      "quote": "I focus on making each tool clear, useful and sustainable for the person or team using it."
     }
   },
   "contact": {
