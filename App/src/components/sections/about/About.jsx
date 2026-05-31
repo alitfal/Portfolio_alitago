@@ -23,6 +23,7 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">{t("about.description")}</p>
+          <p className="about__description">{t("about.confidentiality")}</p>
           {/*
           <a
             href="https://portfolio-alitago.vercel.app/"
